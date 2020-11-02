@@ -1,0 +1,133 @@
+@import "src/styles/_variables.scss";
+
+.landing-navbar {
+  height: $navbar-height;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  z-index: $z-index-elem;
+
+  &-img {
+    height: 36px;
+    margin-right: 36px;
+  }
+
+  &-btn {
+    background-color: transparent;
+    color: $text-color;
+    padding: 8px 24px;
+    font-size: $font-size-default;
+    letter-spacing: $letter-space-default;
+  }
+
+  &-user {
+    margin-left: auto;
+    &-btn {
+      padding: 0 24px;
+      font-size: $font-size-default;
+      letter-spacing: $letter-space-default;
+      border-radius: 240px;
+      font-size: 0.95rem;
+      height: 40px;
+
+      &--primary {
+        background-color: $primary-color;
+        color: $text-color-white;
+        margin-right: 10px;
+        font-weight: 600;
+      }
+
+      &--secondary {
+        background-color: transparent;
+        border: 2px solid $text-color-grey;
+        color: $text-color;
+      }
+    }
+  }
+}
+
+.landing-container {
+  width: 100%;
+  position: relative;
+  &-video {
+    width: 100%;
+    top: $navbar-height;
+  }
+
+  &-form {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 64px;
+
+    display: flex;
+    align-items: center;
+
+    &-box {
+      width: 460px;
+      background-color: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(5px);
+      padding: 32px 32px 16px 32px;
+      border-radius: $border-radius-small;
+
+      display: grid;
+      grid-template-columns: 1fr;
+
+      &-header1 {
+        color: $text-color-white;
+        font-size: 2.6rem;
+        line-height: 2.8rem;
+        margin-bottom: 8px;
+      }
+
+      &-header2 {
+        color: $primary-color;
+        font-size: 3rem;
+        font-weight: 600;
+        margin-bottom: 40px;
+      }
+
+      &-input {
+        height: 50px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 16px;
+        border-radius: $border-radius-small;
+        border: none;
+        outline: none;
+        padding: 0 24px;
+        background-color: $input-transparent-bg;
+        color: $text-color-white;
+
+        &::placeholder {
+          color: rgba(251, 251, 251, 0.5);
+          font-weight: 300;
+        }
+      }
+
+      &-btn {
+        background-color: $primary-color;
+        border-radius: $border-radius-small;
+        height: 64px;
+        font-size: $font-size-default;
+        font-weight: 600;
+        letter-spacing: $letter-space-default;
+        margin-bottom: 16px;
+      }
+
+      &-text {
+        text-align: center;
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: $text-color-white;
+      }
+
+      &-link {
+        text-decoration: none;
+        color: $primary-color;
+        font-weight: bold;
+      }
+    }
+  }
+}
