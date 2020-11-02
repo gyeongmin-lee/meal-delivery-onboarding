@@ -1,4 +1,9 @@
-@import "src/styles/_variables.scss";
+@import "src/styles/_styles.scss";
+
+.landing {
+  display: flex;
+  flex-direction: column;
+}
 
 .landing-navbar {
   height: $navbar-height;
@@ -9,27 +14,27 @@
   z-index: $z-index-elem;
 
   &-img {
-    height: 36px;
+    height: 32px;
     margin-right: 36px;
   }
 
   &-btn {
     background-color: transparent;
     color: $text-color;
-    padding: 8px 24px;
-    font-size: $font-size-default;
+    padding: 8px 16px;
+    font-size: $font-size-small;
     letter-spacing: $letter-space-default;
   }
 
   &-user {
     margin-left: auto;
     &-btn {
-      padding: 0 24px;
+      padding: 0 16px;
       font-size: $font-size-default;
       letter-spacing: $letter-space-default;
       border-radius: 240px;
-      font-size: 0.95rem;
-      height: 40px;
+      font-size: $font-size-small;
+      height: 32px;
 
       &--primary {
         background-color: $primary-color;
@@ -48,27 +53,23 @@
 }
 
 .landing-container {
-  width: 100%;
-  position: relative;
-  &-video {
-    width: 100%;
-    top: $navbar-height;
-  }
+  background-image: url("./bg.gif");
+  @include bg-cover;
+
+  display: grid;
+  height: 532px;
+  padding: 0 48px;
+  justify-content: flex-end;
 
   &-form {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 64px;
-
     display: flex;
     align-items: center;
 
     &-box {
-      width: 460px;
-      background-color: rgba(0, 0, 0, 0.65);
+      width: 360px;
+      background-color: rgba(0, 0, 0, 0.55);
       backdrop-filter: blur(5px);
-      padding: 32px 32px 16px 32px;
+      padding: 20px 20px 12px 20px;
       border-radius: $border-radius-small;
 
       display: grid;
@@ -76,27 +77,28 @@
 
       &-header1 {
         color: $text-color-white;
-        font-size: 2.6rem;
-        line-height: 2.8rem;
+        font-size: 2rem;
+        line-height: 2.3rem;
         margin-bottom: 8px;
       }
 
       &-header2 {
         color: $primary-color;
-        font-size: 3rem;
+        font-size: 2.2rem;
+        line-height: 2.5rem;
         font-weight: 600;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
       }
 
       &-input {
-        height: 50px;
-        font-size: 1.2rem;
+        height: 46px;
+        font-size: 0.8rem;
         font-weight: 600;
-        margin-bottom: 16px;
+        margin-bottom: 12px;
         border-radius: $border-radius-small;
         border: none;
         outline: none;
-        padding: 0 24px;
+        padding: 0 16px;
         background-color: $input-transparent-bg;
         color: $text-color-white;
 
@@ -109,16 +111,17 @@
       &-btn {
         background-color: $primary-color;
         border-radius: $border-radius-small;
-        height: 64px;
-        font-size: $font-size-default;
+        height: 54px;
+        font-size: $font-size-regular;
         font-weight: 600;
         letter-spacing: $letter-space-default;
-        margin-bottom: 16px;
+        margin-bottom: 12px;
+        width: 100%;
       }
 
       &-text {
         text-align: center;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         font-weight: 300;
         color: $text-color-white;
       }

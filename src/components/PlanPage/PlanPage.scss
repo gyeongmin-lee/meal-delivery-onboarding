@@ -1,0 +1,65 @@
+@import "src/styles/_styles.scss";
+
+.plan {
+  background-color: $bg-white-dark;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  row-gap: 40px;
+
+  &-info {
+    &-title {
+      font-weight: bold;
+      font-size: 1.6rem;
+      letter-spacing: $letter-space-default;
+      margin-bottom: 24px;
+    }
+
+    &-box {
+      display: grid;
+      grid-template-columns: min-content min-content min-content;
+      justify-content: center;
+      column-gap: 12px;
+
+      &-divider {
+        width: 1px;
+        height: calc(100% - 16px);
+        background-color: $text-color-grey;
+        opacity: 0.3;
+      }
+
+      &-item {
+        width: 210px;
+
+        &-text {
+          padding: 0 24px;
+          font-size: $font-size-tiny;
+          letter-spacing: $letter-space-default;
+          line-height: $font-size-tiny * 1.25;
+          color: $text-color-darkgrey;
+          margin-bottom: 4px;
+        }
+
+        &-img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  &-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24px;
+    @include fullhd {
+      max-width: 1344px;
+    }
+  }
+
+  &-message {
+    color: $text-color-darkgrey;
+    font-size: $font-size-small;
+    letter-spacing: $letter-space-default;
+  }
+}

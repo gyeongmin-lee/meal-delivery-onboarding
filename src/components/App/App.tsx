@@ -1,12 +1,20 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { LandingPage } from "../LandingPage/LandingPage";
-import "./App.scss";
+import { SignUpPage } from "../SignUpPage/SignUpPage";
 
 function App() {
   return (
-    <div className="App">
-      <LandingPage />
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" exact={true}>
+          <LandingPage />
+        </Route>
+        <Route path="/signup">
+          <SignUpPage />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

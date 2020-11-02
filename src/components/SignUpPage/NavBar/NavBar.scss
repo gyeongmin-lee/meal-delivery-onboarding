@@ -1,0 +1,47 @@
+@import "src/styles/_styles.scss";
+
+.nav {
+  height: $signup-navbar-height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 24px;
+}
+
+.nav-content {
+  flex: 1;
+  display: grid;
+  align-items: center;
+  align-content: center;
+  grid-template-columns: 1fr max-content;
+  @include fullhd {
+    max-width: 1344px;
+  }
+
+  &-img {
+    height: $signup-navbar-height - 40px;
+  }
+
+  &-step {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content 1fr min-content 1fr;
+    align-items: center;
+    justify-content: center;
+
+    column-gap: 10px;
+
+    &-text {
+      font-size: $font-size-regular;
+      font-weight: 600;
+      color: $text-color-greyscale;
+
+      &--active {
+        color: $primary-color;
+      }
+    }
+
+    &-arrow {
+      width: 18px;
+    }
+  }
+}

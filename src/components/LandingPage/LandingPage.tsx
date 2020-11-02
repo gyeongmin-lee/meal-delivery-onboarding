@@ -1,11 +1,11 @@
 import React from "react";
-import introVideo from "./fmp-banner.mp4";
+import { Link } from "react-router-dom";
+import logo from "../../logo.png";
 import "./LandingPage.scss";
-import logo from "./logo.png";
 
 export const LandingPage = () => {
   return (
-    <>
+    <div className="landing">
       <div className="landing-navbar">
         <img className="landing-navbar-img" src={logo} alt="logo" />
         <button className="landing-navbar-btn">The Plans</button>
@@ -21,14 +21,6 @@ export const LandingPage = () => {
         </div>
       </div>
       <div className="landing-container">
-        <video
-          className="landing-container-video"
-          loop
-          autoPlay
-          playsInline
-          muted
-          src={introVideo}
-        ></video>
         <div className="landing-container-form">
           <div className="landing-container-form-box">
             <h1 className="landing-container-form-box-header1">
@@ -48,9 +40,11 @@ export const LandingPage = () => {
               className="landing-container-form-box-input"
               type="text"
             />
-            <button className="landing-container-form-box-btn">
-              Get Started
-            </button>
+            <Link to="/signup">
+              <button className="landing-container-form-box-btn">
+                Get Started
+              </button>
+            </Link>
             <p className="landing-container-form-box-text">
               Already have an account?{" "}
               <a
@@ -63,6 +57,6 @@ export const LandingPage = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };

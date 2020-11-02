@@ -1,16 +1,47 @@
-$navbar-height: 56px;
+$navbar-height: 50px;
+$signup-navbar-height: 70px;
 
 $text-color: #14142b;
 $text-color-white: #f7f7fc;
+$text-color-darkgrey: #4e4b66;
 $text-color-grey: #66738f;
+$text-color-greyscale: #6e7191;
+
 $primary-color: #65c26f;
+$bg-white-dark: #f7f7fc;
+$card-bg: #fbfbff;
+$secondary-color-light: #ded3ff;
+$secondary-color-dark: #2a00a2;
 $input-transparent-bg: rgba(252, 252, 252, 0.2);
 
 $font-size-default: 1rem;
+$font-size-regular: 0.9rem;
+$font-size-small: 0.8rem;
+$font-size-tiny: 0.7rem;
 
 $letter-space-default: 0.75px;
 
 $border-radius-small: 16px;
+$border-radius-large: 32px;
 
 $z-index-elem: 1000;
 $z-index-overlay: 2000;
+
+$card-shadow: 0px 8px 16px 0px rgba(17, 17, 17, 0.04);
+
+$mobile: 768px;
+$desktop: 1024px;
+$widescreen: 1216px;
+$fullhd: 1408px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin fullhd {
+  @media (min-width: #{$fullhd}) {
+    @content;
+  }
+}
