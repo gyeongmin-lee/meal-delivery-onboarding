@@ -1,11 +1,16 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import meal1 from "./meal-01.png";
 import meal2 from "./meal-02.png";
 import { PlanCard } from "./PlanCard/PlanCard";
 import "./PlanPage.scss";
 
 export const PlanPage = () => {
-  const handleSelect = (mealCount: number) => {};
+  const history = useHistory();
+
+  const handleSelect = (mealCount: number) => {
+    history.push(`meal?mpw=${mealCount}`);
+  };
 
   return (
     <div className="plan">

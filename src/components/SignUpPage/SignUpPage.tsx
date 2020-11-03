@@ -1,18 +1,22 @@
 import React from "react";
 import { Route, Switch, useRouteMatch } from "react-router-dom";
+import { MealPage } from "../MealPage/MealPage";
 import { PlanPage } from "../PlanPage/PlanPage";
 import { NavBar } from "./NavBar/NavBar";
 import "./SignUpPage.scss";
 
 export const SignUpPage = () => {
-  let match = useRouteMatch();
+  const match = useRouteMatch();
 
   return (
     <div className="signup">
       <NavBar />
       <Switch>
-        <Route path={`${match.path}/`}>
+        <Route path={`${match.path}/plan`}>
           <PlanPage />
+        </Route>
+        <Route path={`${match.path}/meal`}>
+          <MealPage />
         </Route>
       </Switch>
     </div>

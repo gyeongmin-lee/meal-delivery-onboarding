@@ -40,7 +40,7 @@ export const LandingPage = () => {
               className="landing-container-form-box-input"
               type="text"
             />
-            <Link to="/signup">
+            <Link to="/signup/plan">
               <button className="landing-container-form-box-btn">
                 Get Started
               </button>
