@@ -9,10 +9,12 @@ $text-color-greyscale: #6e7191;
 
 $primary-color: #65c26f;
 $bg-white-dark: #f7f7fc;
+$bg-white-light: #eff0f6;
 $card-bg: #fbfbff;
 $secondary-color-light: #ded3ff;
 $secondary-color-dark: #2a00a2;
 $input-transparent-bg: rgba(252, 252, 252, 0.2);
+$white: #ffffff;
 
 $font-size-default: 1rem;
 $font-size-regular: 0.9rem;
@@ -21,13 +23,15 @@ $font-size-tiny: 0.7rem;
 
 $letter-space-default: 0.75px;
 
-$border-radius-small: 16px;
-$border-radius-large: 32px;
+$border-radius-small: 12px;
+$border-radius-large: 24px;
 
 $z-index-elem: 1000;
 $z-index-overlay: 2000;
 
 $card-shadow: 0px 8px 16px 0px rgba(17, 17, 17, 0.04);
+
+$scale: scale(1.5, 1);
 
 $mobile: 768px;
 $desktop: 1024px;

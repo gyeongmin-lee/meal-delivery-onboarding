@@ -3,3 +3,8 @@
   background-size: cover;
   background-position: center top;
 }
+
+@mixin sticky-top {
+  position: sticky;
+  top: 40px;
+}
