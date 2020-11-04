@@ -1,9 +1,14 @@
 import classNames from "classnames";
-import React from "react";
+import React, { useEffect } from "react";
+import { getMeals } from "../../api/MealsApi";
 import { Dropdown } from "../common/Dropdown/Dropdown";
 import "./MealPage.scss";
 
 export const MealPage = () => {
+  useEffect(() => {
+    getMeals();
+  }, []);
+
   return (
     <div className="meal-wrapper">
       <div className="meal">
