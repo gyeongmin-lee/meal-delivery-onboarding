@@ -1,0 +1,36 @@
+@import "src/styles/_styles.scss";
+
+.mealgroup {
+  &-header {
+    padding: 0 100px;
+    letter-spacing: $letter-space-default;
+
+    &-title {
+      font-size: 1.6rem;
+      font-weight: bold;
+
+      margin-bottom: 8px;
+    }
+
+    &-subtitle {
+      font-size: $font-size-tiny;
+      font-style: italic;
+      color: $text-color-darkgrey;
+      margin-bottom: 16px;
+    }
+
+    &-description {
+      font-size: $font-size-small;
+      color: $text-color-darkgrey;
+      line-height: $font-size-small * 1.25;
+      margin-bottom: 40px;
+    }
+  }
+
+  &-meals {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 24px;
+  }
+}

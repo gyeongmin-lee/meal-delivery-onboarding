@@ -3,13 +3,13 @@ import axios from "axios";
 const DEMO_MEAL_URL =
   "https://temp-fresh-meal-plan.s3.us-west-2.amazonaws.com/fresh-meals.json";
 
-interface MealGroup {
+export interface MealGroup {
   title: string;
   description: string;
   items: Meal[];
 }
 
-export interface MealObject {
+interface MealObject {
   [key: string]: MealGroup;
 }
 
@@ -33,7 +33,9 @@ const initialMealObject: MealObject = {
   },
 };
 
-interface Meal {
+export const initialMealGroupList = Object.values(initialMealObject);
+
+export interface Meal {
   id: number;
   title: string;
   nutrient: {
@@ -43,6 +45,7 @@ interface Meal {
     fats: string;
   };
   type: string;
+  src: string;
 }
 
 const tranformMeal = (meal: any): Meal => {
@@ -60,16 +63,22 @@ const tranformMeal = (meal: any): Meal => {
       carbs: nutrients[2],
       fats: nutrients[3],
     },
+
+    src: meal.images[0].src,
   };
 };
 
-export const getMeals = async (): Promise<MealObject> => {
+export const getMealsService = async (): Promise<MealGroup[]> => {
   const res = await axios.get(DEMO_MEAL_URL);
   const meals: any[] = res.data.products;
+  const mealObject = JSON.parse(JSON.stringify(initialMealObject));
   meals.forEach((meal) => {
-    if (initialMealObject[meal.tags]) {
-      initialMealObject[meal.tags].items.push(tranformMeal(meal));
+    if (mealObject[meal.tags]) {
+      mealObject[meal.tags].items = [
+        ...mealObject[meal.tags].items,
+        tranformMeal(meal),
+      ];
     }
   });
-  return initialMealObject;
+  return Object.values(mealObject);
 };
