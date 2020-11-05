@@ -1,8 +1,9 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { AppThunk } from ".";
+import { createSelector, createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { AppThunk, RootState } from ".";
 import {
   getMealsService,
   initialMealGroupList,
+  Meal,
   MealGroup,
 } from "../api/MealsApi";
 
@@ -49,5 +50,21 @@ export const getMeals = (): AppThunk => async (dispatch) => {
     dispatch(getMealsFailed());
   }
 };
+
+export const selectRandomMeals = createSelector<
+  RootState,
+  MealGroup[] | null,
+  Meal[]
+>(
+  (state) => state.meals.meals,
+  (meals) => {
+    if (!meals) return [];
+    let mealList: Meal[] = [];
+    meals.forEach((mealGroup) => {
+      mealList = [...mealList, ...mealGroup.items];
+    });
+    return mealList.sort((a, b) => a.id - b.id);
+  }
+);
 
 export default meals.reducer;

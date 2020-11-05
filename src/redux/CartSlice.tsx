@@ -40,6 +40,16 @@ const cart = createSlice({
         mpw: payload,
       };
     },
+    addMealsToCart(state, { payload }: PayloadAction<Meal[]>) {
+      return {
+        ...state,
+        items: payload.map((item) => ({
+          id: item.id,
+          meal: item,
+          quantity: 1,
+        })),
+      };
+    },
     addMealToCart(
       state,
       { payload }: PayloadAction<{ meal: Meal; quantity: number }>
@@ -130,6 +140,7 @@ export const selectSubtotal = createSelector<
 
 export const {
   addMealToCart,
+  addMealsToCart,
   decrementMeal,
   incrementMeal,
   removeMealFromCart,

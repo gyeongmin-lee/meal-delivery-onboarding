@@ -34,6 +34,7 @@
       font-size: $font-size-regular;
       letter-spacing: $letter-space-default;
       color: $text-color-darkgrey;
+      cursor: pointer;
 
       &--active {
         font-weight: 600;
@@ -79,6 +80,7 @@
       justify-content: center;
       text-align: center;
       row-gap: 64px;
+      margin-bottom: 256px;
     }
   }
   &-cart-wrapper {
