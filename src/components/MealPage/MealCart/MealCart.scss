@@ -1,0 +1,76 @@
+@import "src/styles/_styles.scss";
+
+.mealcart {
+  background-color: $text-color-white;
+  box-shadow: $card-shadow;
+  border-radius: $border-radius-large;
+  height: 560px;
+
+  @include sticky-top;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content min-content;
+
+  &-header {
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top-left-radius: $border-radius-large;
+    border-top-right-radius: $border-radius-large;
+    padding: 16px 24px;
+
+    &-title {
+      font-weight: bold;
+      font-size: 1.2rem;
+      letter-spacing: $letter-space-default;
+    }
+
+    &-clear {
+      background: transparent;
+      border: 2px solid $text-color-grey;
+      border-radius: 30px;
+      color: $text-color-grey;
+      font-size: 0.5rem;
+      font-weight: bold;
+      letter-spacing: $letter-space-default;
+      padding: 3px 12px;
+    }
+  }
+
+  &-items {
+    overflow: auto;
+  }
+
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: $letter-space-default;
+    height: 48px;
+    background-color: $white;
+    padding: 0 16px;
+
+    &-count {
+      font-size: $font-size-tiny;
+    }
+
+    &-subtotal {
+      font-size: $font-size-small;
+      &-value {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &-btn {
+    background-color: $primary-color;
+    border-bottom-left-radius: $border-radius-large;
+    border-bottom-right-radius: $border-radius-large;
+    letter-spacing: $letter-space-default;
+    font-weight: 600;
+
+    &--disabled {
+      opacity: 0.75;
+    }
+  }
+}

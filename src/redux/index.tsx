@@ -4,10 +4,12 @@ import {
   configureStore,
   ThunkAction,
 } from "@reduxjs/toolkit";
+import cartReducer from "./CartSlice";
 import mealsReducer from "./MealsSlice";
 
 const rootReducer = combineReducers({
   meals: mealsReducer,
+  cart: cartReducer,
 });
 
 export type RootState = ReturnType<typeof rootReducer>;

@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../redux";
 import { getMeals } from "../../redux/MealsSlice";
 import { Dropdown } from "../common/Dropdown/Dropdown";
+import { MealCart } from "./MealCart/MealCart";
 import { MealGroup } from "./MealGroup/MealGroup";
 import "./MealPage.scss";
 
@@ -58,23 +59,7 @@ export const MealPage = () => {
           </div>
         </div>
         <div className="mealpage-cart-wrapper">
-          <div className="mealpage-cart">
-            <div className="mealpage-cart-header">
-              <h1 className="mealpage-cart-header-title">Cart</h1>
-              <button className="mealpage-cart-header-clear">Clear All</button>
-            </div>
-            <div className="mealpage-cart-items"></div>
-            <div className="mealpage-cart-info">
-              <div className="mealpage-cart-info-count">6 Items</div>
-              <div className="mealpage-cart-info-subtotal">
-                Subtotal:{" "}
-                <span className="mealpage-cart-info-subtotal-value">
-                  $63.99
-                </span>
-              </div>
-            </div>
-            <button className="mealpage-cart-btn">Continue</button>
-          </div>
+          <MealCart />
         </div>
       </div>
     </div>

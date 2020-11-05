@@ -9,6 +9,7 @@ interface MealGroupProps {
 
 export const MealGroup: FC<MealGroupProps> = ({ mealGroup }) => {
   const { title, description, items } = mealGroup;
+
   return (
     <div className="mealgroup">
       <div className="mealgroup-header">

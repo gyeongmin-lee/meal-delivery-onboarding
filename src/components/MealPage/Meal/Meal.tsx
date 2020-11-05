@@ -1,5 +1,14 @@
-import React, { FC } from "react";
+import React, { FC, useCallback } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Meal as MealObj } from "../../../api/MealsApi";
+import { RootState } from "../../../redux";
+import {
+  addMealToCart,
+  decrementMeal,
+  incrementMeal,
+  removeMealFromCart,
+} from "../../../redux/CartSlice";
+import { Counter } from "../../common/Counter/Counter";
 import "./Meal.scss";
 
 interface MealProps {
@@ -7,6 +16,34 @@ interface MealProps {
 }
 
 export const Meal: FC<MealProps> = ({ meal }) => {
+  const cart = useSelector((root: RootState) => root.cart);
+  const dispatch = useDispatch();
+
+  const isInCart = cart.find((item) => item.id === meal.id);
+  const cartQuantity =
+    isInCart && cart.find((item) => item.id === meal.id)?.quantity;
+
+  const counterValue = cartQuantity ?? 1;
+
+  const increment = () => {
+    dispatch(incrementMeal(meal.id));
+  };
+
+  const decrement = () => {
+    if (cartQuantity && cartQuantity > 1) dispatch(decrementMeal(meal.id));
+    else dispatch(removeMealFromCart(meal.id));
+  };
+
+  const addMeal = useCallback(() => {
+    !isInCart &&
+      dispatch(
+        addMealToCart({
+          meal: meal,
+          quantity: 1,
+        })
+      );
+  }, [dispatch, isInCart, meal]);
+
   return (
     <div className="meal">
       <img src={meal.src} alt={meal.title} className="meal-img" />
@@ -38,8 +75,23 @@ export const Meal: FC<MealProps> = ({ meal }) => {
             </div>
           </div>
         </div>
+        <div className="meal-footer">
+          {isInCart && (
+            <Counter
+              value={counterValue}
+              onDecrement={decrement}
+              customClassName="meal-footer-counter"
+            />
+          )}
+          <button
+            className="meal-footer-btn"
+            onClick={isInCart ? increment : addMeal}
+          >
+            <span className="meal-footer-btn-icon">+</span>{" "}
+            {isInCart ? "Add Another" : "Add to Cart"}
+          </button>
+        </div>
       </div>
-      <div className="meal-footer"></div>
     </div>
   );
 };

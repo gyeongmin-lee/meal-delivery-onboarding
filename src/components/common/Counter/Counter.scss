@@ -1,0 +1,24 @@
+@import "src/styles/_styles.scss";
+
+.counter {
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  align-items: center;
+  column-gap: 8px;
+
+  &-btn {
+    background-color: $bg-white-light;
+    color: $text-color;
+    font-weight: bold;
+    height: $counter-dimension;
+    width: $counter-dimension;
+    padding: 0;
+    border-radius: $counter-dimension / 2;
+  }
+
+  &-value {
+    font-size: $font-size-tiny;
+    font-weight: bold;
+    color: $text-color;
+  }
+}
