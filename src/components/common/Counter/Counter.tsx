@@ -4,6 +4,9 @@ import "./Counter.scss";
 
 interface CounterProps {
   value: number;
+  /**
+   * @default "large"
+   */
   onIncrement?: () => void;
   onDecrement?: () => void;
   customClassName?: string;

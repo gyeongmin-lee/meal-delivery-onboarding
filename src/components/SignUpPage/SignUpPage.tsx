@@ -15,7 +15,7 @@ export const SignUpPage = () => {
         <Route path={`${match.path}/plan`}>
           <PlanPage />
         </Route>
-        <Route path={`${match.path}/meal`}>
+        <Route path={`${match.path}/meal/:mpw`}>
           <MealPage />
         </Route>
       </Switch>

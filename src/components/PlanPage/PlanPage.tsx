@@ -9,7 +9,7 @@ export const PlanPage = () => {
   const history = useHistory();
 
   const handleSelect = (mealCount: number) => {
-    history.push(`meal?mpw=${mealCount}`);
+    history.push(`meal/${mealCount}`);
   };
 
   return (

@@ -7,7 +7,7 @@ import "./NavBar.scss";
 
 export const NavBar = () => {
   const location = useLocation();
-  const pathName = location?.pathname?.split("/").pop();
+  const pathNames = location?.pathname?.split("/");
 
   return (
     <div className="nav">
@@ -16,7 +16,7 @@ export const NavBar = () => {
         <div className="nav-content-step">
           <div
             className={classnames("nav-content-step-text", {
-              "nav-content-step-text--active": pathName === "plan",
+              "nav-content-step-text--active": pathNames.includes("plan"),
             })}
           >
             Plans
@@ -24,7 +24,7 @@ export const NavBar = () => {
           <img src={forwardArrow} alt="" className="nav-content-step-arrow" />
           <div
             className={classnames("nav-content-step-text", {
-              "nav-content-step-text--active": pathName === "meal",
+              "nav-content-step-text--active": pathNames.includes("meal"),
             })}
           >
             Meals
@@ -32,7 +32,7 @@ export const NavBar = () => {
           <img src={forwardArrow} alt="" className="nav-content-step-arrow" />
           <div
             className={classnames("nav-content-step-text", {
-              "nav-content-step-text--active": pathName === "checkout",
+              "nav-content-step-text--active": pathNames.includes("checkout"),
             })}
           >
             Checkout

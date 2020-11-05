@@ -19,20 +19,20 @@ export const Meal: FC<MealProps> = ({ meal }) => {
   const cart = useSelector((root: RootState) => root.cart);
   const dispatch = useDispatch();
 
-  const isInCart = cart.find((item) => item.id === meal.id);
+  const isInCart = cart.items.find((item) => item.id === meal.id);
   const cartQuantity =
-    isInCart && cart.find((item) => item.id === meal.id)?.quantity;
+    isInCart && cart.items.find((item) => item.id === meal.id)?.quantity;
 
   const counterValue = cartQuantity ?? 1;
 
-  const increment = () => {
+  const increment = useCallback(() => {
     dispatch(incrementMeal(meal.id));
-  };
+  }, [dispatch, meal.id]);
 
-  const decrement = () => {
+  const decrement = useCallback(() => {
     if (cartQuantity && cartQuantity > 1) dispatch(decrementMeal(meal.id));
     else dispatch(removeMealFromCart(meal.id));
-  };
+  }, [cartQuantity, dispatch, meal.id]);
 
   const addMeal = useCallback(() => {
     !isInCart &&
