@@ -1,9 +1,15 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import logo from "../../logo.png";
+import { RootState } from "../../redux";
+import { setEmail, setZip } from "../../redux/OrderSlice";
 import "./LandingPage.scss";
 
 export const LandingPage = () => {
+  const dispatch = useDispatch();
+  const { email, zip } = useSelector((state: RootState) => state.order);
+
   return (
     <div className="landing">
       <div className="landing-navbar">
@@ -34,11 +40,15 @@ export const LandingPage = () => {
               placeholder="Email Address"
               className="landing-container-form-box-input"
               type="text"
+              value={email}
+              onChange={(e) => dispatch(setEmail(e.target.value))}
             />
             <input
               placeholder="Zip Code"
               className="landing-container-form-box-input"
               type="text"
+              value={zip}
+              onChange={(e) => dispatch(setZip(e.target.value))}
             />
             <Link to="/signup/plan">
               <button className="landing-container-form-box-btn">

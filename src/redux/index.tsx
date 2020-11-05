@@ -6,10 +6,12 @@ import {
 } from "@reduxjs/toolkit";
 import cartReducer from "./CartSlice";
 import mealsReducer from "./MealsSlice";
+import orderReducer from "./OrderSlice";
 
 const rootReducer = combineReducers({
   meals: mealsReducer,
   cart: cartReducer,
+  order: orderReducer,
 });
 
 export type RootState = ReturnType<typeof rootReducer>;
