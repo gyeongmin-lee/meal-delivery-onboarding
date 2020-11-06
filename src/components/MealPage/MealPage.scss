@@ -74,6 +74,7 @@
         padding: 7px 20px 7px 20px;
         border-radius: 64px;
         color: $text-color-white;
+        @include hover-large;
 
         &-title {
           letter-spacing: $letter-space-default;

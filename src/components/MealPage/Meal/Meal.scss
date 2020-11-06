@@ -63,12 +63,6 @@
     font-size: $font-size-tiny;
     text-align: center;
     color: $text-color-darkgrey;
-    // @include tiny-mobile {
-    //   display: grid;
-    //   grid-template-columns: 1fr 1fr;
-    //   row-gap: 4px;
-    //   column-gap: 4px;
-    // }
 
     &-group {
       display: grid;
@@ -91,7 +85,6 @@
 
     &-counter {
       grid-area: counter;
-      margin-right: 4px;
     }
 
     &-btn {
@@ -108,6 +101,7 @@
       background-color: $primary-color;
       font-weight: 500;
       width: 100%;
+      @include hover-small;
 
       &-icon {
         margin-right: 4px;

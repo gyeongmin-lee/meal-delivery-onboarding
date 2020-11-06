@@ -4,7 +4,6 @@
   display: grid;
   grid-template-columns: min-content min-content min-content;
   align-items: center;
-  column-gap: 8px;
 
   &-btn {
     background-color: $bg-white-light;
@@ -14,11 +13,16 @@
     width: $counter-dimension;
     padding: 0;
     border-radius: $counter-dimension / 2;
+    &:hover {
+      box-shadow: 0 0 0 4px lighten($bg-white-light, 3%);
+    }
   }
 
   &-value {
     font-size: $font-size-tiny;
     font-weight: bold;
     color: $text-color;
+    width: 32px;
+    text-align: center;
   }
 }

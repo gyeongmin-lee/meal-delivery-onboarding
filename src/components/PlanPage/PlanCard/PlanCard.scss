@@ -15,6 +15,12 @@ $card-padding: 30px;
   box-shadow: $card-shadow;
   position: relative;
   cursor: pointer;
+  @include hover-large;
+  &:hover {
+    .plancard-btn {
+      background-color: darken($primary-color, 15%);
+    }
+  }
 
   &-title {
     font-size: 2.8rem;

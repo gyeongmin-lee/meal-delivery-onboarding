@@ -39,6 +39,7 @@
       font-weight: bold;
       letter-spacing: $letter-space-default;
       padding: 3px 12px;
+      @include hover-small;
     }
   }
 

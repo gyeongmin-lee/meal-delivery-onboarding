@@ -53,12 +53,14 @@
         color: $text-color-white;
         margin-right: 10px;
         font-weight: 600;
+        @include hover-small;
       }
 
       &--secondary {
         background-color: transparent;
         border: 2px solid $text-color-grey;
         color: $text-color;
+        @include hover-small;
       }
     }
   }

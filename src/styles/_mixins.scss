@@ -22,3 +22,15 @@
   letter-spacing: $letter-space-default;
   font-weight: 600;
 }
+
+@mixin hover-small {
+  &:hover {
+    box-shadow: 0 0 0 4px $bg-white-light;
+  }
+}
+
+@mixin hover-large {
+  &:hover {
+    box-shadow: 0 0 0 8px $bg-white-light;
+  }
+}

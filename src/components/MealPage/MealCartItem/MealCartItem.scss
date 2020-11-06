@@ -35,9 +35,14 @@ $image-dimension: 80px;
       .counter-btn {
         width: 20px;
         height: 20px;
+        &:hover {
+          box-shadow: 0 0 0 4px lighten($bg-white-light, 3%);
+        }
       }
 
-      column-gap: 6px;
+      .counter-value {
+        width: 24px;
+      }
     }
   }
 }
