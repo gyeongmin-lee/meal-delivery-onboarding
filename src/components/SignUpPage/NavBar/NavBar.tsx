@@ -1,12 +1,10 @@
 import React from "react";
-import { NavLink, useHistory, useLocation } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 import forwardArrow from "../../../icons/forward.svg";
 import logo from "../../../logo.png";
 import "./NavBar.scss";
 
 export const NavBar = () => {
-  const location = useLocation();
-  const pathNames = location?.pathname?.split("/");
   const history = useHistory();
 
   const navigateHome = () => {
