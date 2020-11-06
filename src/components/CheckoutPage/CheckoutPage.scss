@@ -20,7 +20,6 @@
   }
   column-gap: 24px;
   @include fullhd {
-    column-gap: 50px;
     max-width: 1168px;
     grid-template-columns: 5fr 3fr;
   }

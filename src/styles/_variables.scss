@@ -34,10 +34,17 @@ $card-shadow: 0px 8px 16px 0px rgba(17, 17, 17, 0.04);
 
 $scale: scale(1.5, 1);
 
+$tiny-mobile: 375px;
 $mobile: 768px;
 $desktop: 1024px;
 $widescreen: 1216px;
 $fullhd: 1408px;
+
+@mixin tiny-mobile {
+  @media (max-width: #{$tiny-mobile}) {
+    @content;
+  }
+}
 
 @mixin mobile {
   @media (max-width: #{$mobile}) {

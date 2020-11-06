@@ -36,6 +36,9 @@
     justify-content: center;
 
     column-gap: 10px;
+    @include mobile {
+      column-gap: 6px;
+    }
 
     &-text {
       font-size: $font-size-regular;

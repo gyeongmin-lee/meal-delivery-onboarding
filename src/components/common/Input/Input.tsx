@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import React, { FC, InputHTMLAttributes, useState } from "react";
+import React, { FC, InputHTMLAttributes, useRef, useState } from "react";
 import "./Input.scss";
 
 type CustomInputProps = Omit<InputHTMLAttributes<HTMLInputElement>, "type">;
@@ -16,6 +16,7 @@ export const Input: FC<InputProps> = ({
 }) => {
   const [value, setValue] = useState<string>("");
   const [isFocused, setIsFocused] = useState(false);
+  const ref = useRef<HTMLInputElement>(null);
 
   return (
     <div
@@ -23,11 +24,13 @@ export const Input: FC<InputProps> = ({
         "finput--focused": isFocused,
         "finput--disabled": !!lockedValue,
       })}
+      onClick={() => ref.current?.focus()}
     >
       {(value || lockedValue) && (
         <div className="finput-label">{placeholder}</div>
       )}
       <input
+        ref={ref}
         className="finput-input"
         value={!!lockedValue ? lockedValue : value}
         onChange={(e) => !lockedValue && setValue(e.target.value)}
