@@ -4,6 +4,10 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: min-content;
+  @include desktop {
+    grid-template-columns: min-content 1fr;
+    grid-auto-rows: 1fr;
+  }
   @include fullhd {
     min-width: 232px;
   }
@@ -14,6 +18,10 @@
     text-align: left;
     display: grid;
     grid-template-columns: 1fr;
+
+    @include desktop {
+      grid-template-rows: min-content;
+    }
   }
 
   &-img {
@@ -23,6 +31,10 @@
     object-position: 45% 50%;
     border-top-left-radius: $border-radius-large;
     border-top-right-radius: $border-radius-large;
+    @include desktop {
+      width: 150px;
+      height: 150px;
+    }
   }
 
   &-title {

@@ -16,6 +16,12 @@
   &-img {
     height: 32px;
     margin-right: 36px;
+    @include desktop {
+      width: 32px;
+      object-fit: cover;
+      object-position: top left;
+      margin-right: 16px;
+    }
   }
 
   &-btn {
@@ -24,6 +30,9 @@
     padding: 8px 16px;
     font-size: $font-size-small;
     letter-spacing: $letter-space-default;
+    @include mobile {
+      display: none;
+    }
   }
 
   &-user {
@@ -58,15 +67,21 @@
 
   display: grid;
   height: 532px;
+
   padding: 0 48px;
   justify-content: flex-end;
+
+  @include mobile {
+    padding: 0 24px;
+    justify-content: center;
+  }
 
   &-form {
     display: flex;
     align-items: center;
 
     &-box {
-      width: 360px;
+      max-width: 360px;
       background-color: rgba(0, 0, 0, 0.55);
       backdrop-filter: blur(5px);
       padding: 20px 20px 12px 20px;

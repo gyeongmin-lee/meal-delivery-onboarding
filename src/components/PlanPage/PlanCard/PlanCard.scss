@@ -1,9 +1,16 @@
 @import "src/styles/_styles.scss";
 
+$card-padding: 30px;
+
 .plancard {
   background: $card-bg;
-  width: 350px;
-  padding-top: 30px;
+  @include fullhd {
+    width: 350px;
+  }
+  @include mobile {
+    width: 100%;
+  }
+  padding-top: $card-padding;
   border-radius: $border-radius-large;
   box-shadow: $card-shadow;
   position: relative;
@@ -18,6 +25,7 @@
     font-size: 1.6rem;
     letter-spacing: $letter-space-default;
     margin-bottom: 16px;
+    padding: 0 $card-padding;
   }
 
   &-info {
@@ -27,6 +35,7 @@
     justify-content: center;
     align-items: center;
     column-gap: 8px;
+    padding: 0 $card-padding;
 
     &-alert {
       height: 8px;

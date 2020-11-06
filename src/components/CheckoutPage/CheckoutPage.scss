@@ -11,11 +11,18 @@
 
   display: grid;
   flex: 1;
-  grid-template-columns: 5fr 3fr;
+  grid-template-columns: 3fr 2fr;
   grid-template-rows: min-content;
-  column-gap: 50px;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
+  column-gap: 24px;
   @include fullhd {
+    column-gap: 50px;
     max-width: 1168px;
+    grid-template-columns: 5fr 3fr;
   }
 
   &-delivery {
@@ -33,6 +40,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 16px;
+
+        @include mobile {
+          grid-template-columns: 1fr;
+          row-gap: 16px;
+        }
       }
 
       &-address {
@@ -42,6 +54,10 @@
           display: grid;
           grid-template-columns: 4fr 3fr 2fr;
           column-gap: 8px;
+          @include mobile {
+            grid-template-columns: 1fr;
+            row-gap: 16px;
+          }
         }
       }
 

@@ -45,6 +45,12 @@ $fullhd: 1408px;
   }
 }
 
+@mixin desktop {
+  @media (max-width: #{$desktop}) {
+    @content;
+  }
+}
+
 @mixin fullhd {
   @media (min-width: #{$fullhd}) {
     @content;

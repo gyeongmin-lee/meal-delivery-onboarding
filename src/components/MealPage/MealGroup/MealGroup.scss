@@ -32,6 +32,9 @@
     @include fullhd {
       grid-template-columns: 1fr 1fr 1fr;
     }
+    @include desktop {
+      grid-template-columns: 1fr;
+    }
     grid-template-columns: 1fr 1fr;
     row-gap: 30px;
     column-gap: 24px;

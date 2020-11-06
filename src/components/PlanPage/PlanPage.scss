@@ -7,6 +7,9 @@
   text-align: center;
   padding: 24px;
   row-gap: 40px;
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
 
   &-info {
     &-title {
@@ -19,6 +22,10 @@
     &-box {
       display: grid;
       grid-template-columns: min-content min-content min-content;
+      @include mobile {
+        grid-template-columns: 1fr min-content 1fr;
+      }
+
       justify-content: center;
       column-gap: 12px;
 
@@ -31,6 +38,9 @@
 
       &-item {
         width: 210px;
+        @include mobile {
+          width: 100%;
+        }
 
         &-text {
           padding: 0 24px;
@@ -50,10 +60,16 @@
 
   &-items {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 24px;
+    grid-template-columns: 1fr 1fr 1fr;
     @include fullhd {
       max-width: 1344px;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      row-gap: 32px;
+      justify-items: center;
     }
   }
 

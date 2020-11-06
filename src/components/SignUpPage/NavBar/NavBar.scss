@@ -21,6 +21,12 @@
   &-img {
     height: $signup-navbar-height - 40px;
     cursor: pointer;
+    @include mobile {
+      width: $signup-navbar-height - 40px;
+      object-fit: cover;
+      object-position: top left;
+      margin-right: 16px;
+    }
   }
 
   &-step {

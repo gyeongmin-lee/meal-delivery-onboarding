@@ -12,7 +12,17 @@
   flex: 1;
 
   display: grid;
-  grid-template-columns: min-content 1fr min-content;
+  grid-template: "sidebar items cart" / min-content 1fr 340px;
+  @include desktop {
+    grid-template: "items cart" / 1fr 300px;
+    column-gap: 24px;
+  }
+  @include mobile {
+    grid-template:
+      "cart" min-content
+      "items" min-content;
+    row-gap: 32px;
+  }
   justify-content: center;
   @include fullhd {
     max-width: 1344px;
@@ -24,6 +34,10 @@
   &-sidebar {
     &-wrapper {
       width: 160px;
+      @include desktop {
+        display: none;
+      }
+      grid-area: sidebar;
     }
 
     display: grid;
@@ -48,6 +62,7 @@
     display: grid;
     grid-template-rows: min-content 1fr;
     row-gap: 48px;
+    grid-area: items;
 
     &-bar {
       display: flex;
@@ -82,9 +97,14 @@
       text-align: center;
       row-gap: 64px;
       margin-bottom: 256px;
+      @include mobile {
+        margin-bottom: 0;
+      }
     }
   }
   &-cart-wrapper {
-    width: 340px;
+    grid-area: cart;
+    @include mobile {
+    }
   }
 }
