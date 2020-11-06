@@ -44,6 +44,7 @@
       font-size: $font-size-regular;
       font-weight: 600;
       color: $text-color-greyscale;
+      text-decoration: none;
 
       &--active {
         color: $primary-color;
