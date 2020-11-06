@@ -101,10 +101,15 @@
         padding: 0 16px;
         background-color: $input-transparent-bg;
         color: $text-color-white;
+        letter-spacing: $letter-space-default;
 
         &::placeholder {
           color: rgba(251, 251, 251, 0.5);
           font-weight: 300;
+        }
+        &:-webkit-autofill {
+          box-shadow: 0 0 0 30px #878785 inset;
+          -webkit-text-fill-color: $text-color-white;
         }
       }
 

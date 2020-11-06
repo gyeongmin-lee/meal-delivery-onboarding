@@ -29,7 +29,10 @@
 
   &-meals {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    @include fullhd {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    grid-template-columns: 1fr 1fr;
     row-gap: 30px;
     column-gap: 24px;
   }

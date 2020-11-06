@@ -41,6 +41,7 @@ export const LandingPage = () => {
               className="landing-container-form-box-input"
               type="text"
               value={email}
+              name="email"
               onChange={(e) => dispatch(setEmail(e.target.value))}
             />
             <input
@@ -48,6 +49,7 @@ export const LandingPage = () => {
               className="landing-container-form-box-input"
               type="text"
               value={zip}
+              autoComplete="postal-code"
               onChange={(e) => dispatch(setZip(e.target.value))}
             />
             <Link to="/signup/plan">

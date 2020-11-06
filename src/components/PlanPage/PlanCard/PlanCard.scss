@@ -5,6 +5,7 @@
   width: 350px;
   padding-top: 30px;
   border-radius: $border-radius-large;
+  box-shadow: $card-shadow;
   position: relative;
   cursor: pointer;
 
@@ -82,6 +83,4 @@
       letter-spacing: $letter-space-default;
     }
   }
-
-  box-shadow: $card-shadow;
 }

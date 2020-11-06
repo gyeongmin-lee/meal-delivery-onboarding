@@ -1,0 +1,69 @@
+@import "src/styles/_styles.scss";
+
+.checkout {
+  &-wrapper {
+    background-color: $bg-white-dark;
+    padding: 32px 24px;
+    display: flex;
+    justify-content: center;
+    height: calc(100% - 36px);
+  }
+
+  display: grid;
+  flex: 1;
+  grid-template-columns: 5fr 3fr;
+  column-gap: 50px;
+  @include fullhd {
+    max-width: 1168px;
+  }
+
+  &-delivery {
+    &-card {
+      padding: 32px;
+      display: grid;
+      row-gap: 32px;
+
+      &-title {
+        margin-bottom: -32px;
+        font-weight: 600;
+      }
+
+      &-names {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 16px;
+      }
+
+      &-address {
+        display: grid;
+        row-gap: 16px;
+        &-level {
+          display: grid;
+          grid-template-columns: 4fr 3fr 2fr;
+          column-gap: 8px;
+        }
+      }
+
+      &-info {
+        display: grid;
+        row-gap: 16px;
+      }
+    }
+  }
+
+  &-section {
+    width: 100%;
+    display: grid;
+    row-gap: 24px;
+    grid-auto-rows: min-content;
+
+    &-header {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    &-card {
+      @include card;
+    }
+  }
+}

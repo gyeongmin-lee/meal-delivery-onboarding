@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import React, { useCallback, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import { RootState } from "../../../redux";
 import {
   clearMealFromCart,
@@ -15,6 +15,7 @@ import "./MealCart.scss";
 export const MealCart = () => {
   const dispatch = useDispatch();
   const { mpw: mealsPerWeek } = useParams<{ mpw: string }>();
+  const history = useHistory();
 
   const { items, mpw } = useSelector((root: RootState) => root.cart);
   const itemCount = useSelector(selectItemCount);
@@ -29,7 +30,7 @@ export const MealCart = () => {
     dispatch(clearMealFromCart());
   }, [dispatch]);
 
-  const navigateToCheckout = () => {};
+  const navigateToCheckout = () => history.push("/signup/checkout");
 
   return (
     <div className="mealcart">

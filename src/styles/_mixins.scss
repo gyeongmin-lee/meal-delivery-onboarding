@@ -8,3 +8,9 @@
   position: sticky;
   top: 40px;
 }
+
+@mixin card {
+  background-color: $white;
+  border-radius: $border-radius-large;
+  box-shadow: $card-shadow;
+}
