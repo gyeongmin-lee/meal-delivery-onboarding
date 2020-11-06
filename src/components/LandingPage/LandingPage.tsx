@@ -28,7 +28,7 @@ export const LandingPage = () => {
       </div>
       <div className="landing-container">
         <div className="landing-container-form">
-          <div className="landing-container-form-box">
+          <form className="landing-container-form-box">
             <h1 className="landing-container-form-box-header1">
               Delicously healthy prepared meals
             </h1>
@@ -66,7 +66,7 @@ export const LandingPage = () => {
                 Login
               </a>
             </p>
-          </div>
+          </form>
         </div>
       </div>
     </div>
