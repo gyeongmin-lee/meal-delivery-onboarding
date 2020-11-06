@@ -14,3 +14,11 @@
   border-radius: $border-radius-large;
   box-shadow: $card-shadow;
 }
+
+@mixin card-bottom-primary-button {
+  background-color: $primary-color;
+  border-bottom-left-radius: $border-radius-large;
+  border-bottom-right-radius: $border-radius-large;
+  letter-spacing: $letter-space-default;
+  font-weight: 600;
+}

@@ -1,11 +1,21 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { RootState } from "../../redux";
+import {
+  selectAddOnPrice,
+  selectPlanPrice,
+  selectSubtotal,
+} from "../../redux/CartSlice";
 import { Input } from "../common/Input/Input";
 import "./CheckoutPage.scss";
+import { MealCheckoutItem } from "./MealCheckoutItem/MealCheckoutItem";
 
 export const CheckoutPage = () => {
   const { zip, email } = useSelector((state: RootState) => state.order);
+  const { items, mpw } = useSelector((state: RootState) => state.cart);
+  const planPrice = useSelector(selectPlanPrice);
+  const addonPrice = useSelector(selectAddOnPrice);
+  const subTotal = useSelector(selectSubtotal);
 
   return (
     <div className="checkout-wrapper">
@@ -64,7 +74,40 @@ export const CheckoutPage = () => {
             Order Summary
           </div>
           <div className="checkout-summary-card checkout-section-card">
-            SUMMARY CARD
+            <div className="checkout-summary-card-header">
+              <h1 className="checkout-summary-card-header-title">My Meals</h1>
+            </div>
+            <div className="checkout-summary-card-items">
+              {items.map((cartItem) => (
+                <MealCheckoutItem cartItem={cartItem} key={cartItem.id} />
+              ))}
+            </div>
+          </div>
+          <div className="checkout-summary-bill">
+            <div className="checkout-summary-bill-info">
+              <div className="checkout-summary-bill-info-label">
+                {mpw} Meal Plan Price
+              </div>
+              <div className="checkout-summary-bill-info-value">
+                ${planPrice}
+              </div>
+            </div>
+            <div className="checkout-summary-bill-info">
+              <div className="checkout-summary-bill-info-label">Add-Ons</div>
+              <div className="checkout-summary-bill-info-value">
+                ${addonPrice}
+              </div>
+            </div>
+            <div className="checkout-summary-bill-divider"></div>
+            <div className="checkout-summary-bill-info">
+              <div className="checkout-summary-bill-info-label checkout-summary-bill-info-label--primary">
+                Today's Total
+              </div>
+              <div className="checkout-summary-bill-info-value checkout-summary-bill-info-value--primary">
+                ${subTotal}
+              </div>
+            </div>
+            <button className="checkout-summary-bill-btn">Order Meals</button>
           </div>
         </div>
       </div>

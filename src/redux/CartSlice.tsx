@@ -138,6 +138,38 @@ export const selectSubtotal = createSelector<
   }
 );
 
+export const selectPlanPrice = createSelector<
+  RootState,
+  number,
+  number | null,
+  string
+>(
+  selectItemCountFromState,
+  (state) => state.cart.mpw,
+  (itemCount, mpw) => {
+    if (!mpw || itemCount === 0) return "0.00";
+    const price = planPrice[mpw];
+    const priceFromPlan = mpw * price;
+    return priceFromPlan.toFixed(2);
+  }
+);
+
+export const selectAddOnPrice = createSelector<
+  RootState,
+  number,
+  number | null,
+  string
+>(
+  selectItemCountFromState,
+  (state) => state.cart.mpw,
+  (itemCount, mpw) => {
+    if (!mpw || itemCount === 0) return "0.00";
+    if (itemCount - mpw <= 0) return "0.00";
+    const addonPrice = (itemCount - mpw) * ADDON_PRICE;
+    return addonPrice.toFixed(2);
+  }
+);
+
 export const {
   addMealToCart,
   addMealsToCart,

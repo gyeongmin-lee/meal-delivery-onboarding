@@ -68,11 +68,7 @@
   }
 
   &-btn {
-    background-color: $primary-color;
-    border-bottom-left-radius: $border-radius-large;
-    border-bottom-right-radius: $border-radius-large;
-    letter-spacing: $letter-space-default;
-    font-weight: 600;
+    @include card-bottom-primary-button;
 
     &--disabled {
       opacity: 0.75;
