@@ -1,6 +1,6 @@
 @import "src/styles/_styles.scss";
 
-$image-dimension: 80px;
+$image-dimension: 56px;
 
 .mealcartitem {
   display: grid;
@@ -10,7 +10,8 @@ $image-dimension: 80px;
   &-img {
     width: $image-dimension;
     height: $image-dimension;
-    object-fit: cover;
+    margin: 12px;
+    object-fit: fill;
     object-position: 43% 50%;
   }
 

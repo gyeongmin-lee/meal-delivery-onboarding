@@ -64,7 +64,7 @@
           "alt": null,
           "width": 500,
           "height": 331,
-          "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/M8349.jpg?v=1597675805",
+          "src": "https://dg3sdkemj1h24.cloudfront.net/apple.svg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18528976044054"
         }
@@ -78,7 +78,7 @@
         "alt": null,
         "width": 500,
         "height": 331,
-        "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/M8349.jpg?v=1597675805",
+        "src": "https://dg3sdkemj1h24.cloudfront.net/bananas.svg",
         "variant_ids": [],
         "admin_graphql_api_id": "gid://shopify/ProductImage/18528976044054"
       }
@@ -232,7 +232,7 @@
           "alt": null,
           "width": 500,
           "height": 331,
-          "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/B8362.jpg?v=1597675574",
+          "src": "https://dg3sdkemj1h24.cloudfront.net/broccoli.svg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18528975749142"
         }
@@ -246,7 +246,7 @@
         "alt": null,
         "width": 500,
         "height": 331,
-        "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/B8362.jpg?v=1597675574",
+        "src": "https://dg3sdkemj1h24.cloudfront.net/carrot.svg",
         "variant_ids": [],
         "admin_graphql_api_id": "gid://shopify/ProductImage/18528975749142"
       }
@@ -315,7 +315,7 @@
           "alt": null,
           "width": 500,
           "height": 331,
-          "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/B8365.jpg?v=1597675758",
+          "src": "https://dg3sdkemj1h24.cloudfront.net/donut.svg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18528975978518"
         }
@@ -329,7 +329,7 @@
         "alt": null,
         "width": 500,
         "height": 331,
-        "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/B8365.jpg?v=1597675758",
+        "src": "https://dg3sdkemj1h24.cloudfront.net/drumstick.svg",
         "variant_ids": [],
         "admin_graphql_api_id": "gid://shopify/ProductImage/18528975978518"
       }
@@ -454,7 +454,7 @@
           "alt": null,
           "width": 600,
           "height": 533,
-          "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/01-small-prints-final-600x533.jpg?v=1598539134",
+          "src": "https://dg3sdkemj1h24.cloudfront.net/ham.svg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18531697459222"
         }
@@ -468,7 +468,7 @@
         "alt": null,
         "width": 600,
         "height": 533,
-        "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/01-small-prints-final-600x533.jpg?v=1598539134",
+        "src": "https://dg3sdkemj1h24.cloudfront.net/hamburger.svg",
         "variant_ids": [],
         "admin_graphql_api_id": "gid://shopify/ProductImage/18531697459222"
       }
@@ -537,7 +537,7 @@
           "alt": null,
           "width": 500,
           "height": 331,
-          "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/M11208.jpg?v=1597675779",
+          "src": "https://dg3sdkemj1h24.cloudfront.net/hot-dog.svg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18528976011286"
         }
@@ -551,7 +551,7 @@
         "alt": null,
         "width": 500,
         "height": 331,
-        "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/M11208.jpg?v=1597675779",
+        "src": "https://dg3sdkemj1h24.cloudfront.net/nuts.svg",
         "variant_ids": [],
         "admin_graphql_api_id": "gid://shopify/ProductImage/18528976011286"
       }
@@ -648,7 +648,7 @@
           "alt": null,
           "width": 500,
           "height": 331,
-          "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/B10826.jpg?v=1597675473",
+          "src": "https://dg3sdkemj1h24.cloudfront.net/pear.svg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18528975618070"
         }
@@ -662,7 +662,7 @@
         "alt": null,
         "width": 500,
         "height": 331,
-        "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/B10826.jpg?v=1597675473",
+        "src": "https://dg3sdkemj1h24.cloudfront.net/pepper.svg",
         "variant_ids": [],
         "admin_graphql_api_id": "gid://shopify/ProductImage/18528975618070"
       }
@@ -731,7 +731,7 @@
           "alt": null,
           "width": 500,
           "height": 331,
-          "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/B10830.jpg?v=1597675715",
+          "src": "https://dg3sdkemj1h24.cloudfront.net/potatoes.svg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18528975912982"
         }
@@ -745,7 +745,7 @@
         "alt": null,
         "width": 500,
         "height": 331,
-        "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/B10830.jpg?v=1597675715",
+        "src": "https://dg3sdkemj1h24.cloudfront.net/salmon.svg",
         "variant_ids": [],
         "admin_graphql_api_id": "gid://shopify/ProductImage/18528975912982"
       }
@@ -842,7 +842,7 @@
           "alt": null,
           "width": 500,
           "height": 331,
-          "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/B10826_c1866a94-d206-4a55-98e5-43aabd178cd9.jpg?v=1597712328",
+          "src": "https://dg3sdkemj1h24.cloudfront.net/steak.svg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18529190215702"
         }
@@ -856,7 +856,7 @@
         "alt": null,
         "width": 500,
         "height": 331,
-        "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/B10826_c1866a94-d206-4a55-98e5-43aabd178cd9.jpg?v=1597712328",
+        "src": "https://dg3sdkemj1h24.cloudfront.net/apple.svg",
         "variant_ids": [],
         "admin_graphql_api_id": "gid://shopify/ProductImage/18529190215702"
       }
@@ -925,7 +925,7 @@
           "alt": null,
           "width": 500,
           "height": 331,
-          "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/M9327.jpg?v=1597675827",
+          "src": "https://dg3sdkemj1h24.cloudfront.net/bananas.svg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18528976076822"
         }
@@ -939,7 +939,7 @@
         "alt": null,
         "width": 500,
         "height": 331,
-        "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/M9327.jpg?v=1597675827",
+        "src": "https://dg3sdkemj1h24.cloudfront.net/broccoli.svg",
         "variant_ids": [],
         "admin_graphql_api_id": "gid://shopify/ProductImage/18528976076822"
       }
@@ -1036,7 +1036,7 @@
           "alt": null,
           "width": 500,
           "height": 331,
-          "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/M10817.jpg?v=1597675609",
+          "src": "https://dg3sdkemj1h24.cloudfront.net/carrot.svg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18528975814678"
         }
@@ -1050,7 +1050,7 @@
         "alt": null,
         "width": 500,
         "height": 331,
-        "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/M10817.jpg?v=1597675609",
+        "src": "https://dg3sdkemj1h24.cloudfront.net/carrot.svg",
         "variant_ids": [],
         "admin_graphql_api_id": "gid://shopify/ProductImage/18528975814678"
       }
@@ -1147,7 +1147,7 @@
           "alt": null,
           "width": 500,
           "height": 331,
-          "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/B7211.jpg?v=1597675552",
+          "src": "https://dg3sdkemj1h24.cloudfront.net/donut.svg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18528975716374"
         }
@@ -1161,7 +1161,7 @@
         "alt": null,
         "width": 500,
         "height": 331,
-        "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/B7211.jpg?v=1597675552",
+        "src": "https://dg3sdkemj1h24.cloudfront.net/drumstick.svg",
         "variant_ids": [],
         "admin_graphql_api_id": "gid://shopify/ProductImage/18528975716374"
       }
@@ -1258,7 +1258,7 @@
           "alt": null,
           "width": 500,
           "height": 331,
-          "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/B6647.jpg?v=1597675521",
+          "src": "https://dg3sdkemj1h24.cloudfront.net/ham.svg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18528975683606"
         }
@@ -1272,7 +1272,7 @@
         "alt": null,
         "width": 500,
         "height": 331,
-        "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/B6647.jpg?v=1597675521",
+        "src": "https://dg3sdkemj1h24.cloudfront.net/hamburger.svg",
         "variant_ids": [],
         "admin_graphql_api_id": "gid://shopify/ProductImage/18528975683606"
       }
@@ -1341,7 +1341,7 @@
           "alt": null,
           "width": 500,
           "height": 331,
-          "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/B6650.jpg?v=1597675736",
+          "src": "https://dg3sdkemj1h24.cloudfront.net/hot-dog.svg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18528975945750"
         }
@@ -1355,7 +1355,7 @@
         "alt": null,
         "width": 500,
         "height": 331,
-        "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/B6650.jpg?v=1597675736",
+        "src": "https://dg3sdkemj1h24.cloudfront.net/nuts.svg",
         "variant_ids": [],
         "admin_graphql_api_id": "gid://shopify/ProductImage/18528975945750"
       }
@@ -1481,7 +1481,7 @@
           "alt": null,
           "width": 500,
           "height": 331,
-          "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/B8362_c4ad6186-7191-44a8-8263-688cf837952e.jpg?v=1597675590",
+          "src": "https://dg3sdkemj1h24.cloudfront.net/pear.svg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18528975781910"
         }
@@ -1495,7 +1495,7 @@
         "alt": null,
         "width": 500,
         "height": 331,
-        "src": "https://cdn.shopify.com/s/files/1/0455/3736/1942/products/B8362_c4ad6186-7191-44a8-8263-688cf837952e.jpg?v=1597675590",
+        "src": "https://dg3sdkemj1h24.cloudfront.net/pepper.svg",
         "variant_ids": [],
         "admin_graphql_api_id": "gid://shopify/ProductImage/18528975781910"
       }
