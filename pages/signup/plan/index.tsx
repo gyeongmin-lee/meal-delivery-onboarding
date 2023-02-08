@@ -8,28 +8,28 @@ import "./index.scss";
 const Page: NextPageWithLayout = () => {
   return (
     <div className="plan">
-      <div className="plan-info">
-        <h1 className="plan-info-title">Choose a Plan</h1>
-        <div className="plan-info-box">
-          <div className="plan-info-box-item">
-            <div className="plan-info-box-item-text">
+      <div>
+        <h1 className="plan__title">Choose a Plan</h1>
+        <div className="plan__box">
+          <div className="plan__item">
+            <div className="plan__item-text">
               Our meals each contains a single serving
             </div>
             <Image
-              className="plan-info-box-item-img"
+              className="plan__item-img"
               src="/images/meal-02.png"
               alt="meal"
               width={210}
               height={168}
             />
           </div>
-          <div className="plan-info-box-divider"></div>
-          <div className="plan-info-box-item">
-            <div className="plan-info-box-item-text">
+          <div className="plan__divider"></div>
+          <div className="plan__item">
+            <div className="plan__item-text">
               Our Fresh+ add-on menu has multi-serve options.
             </div>
             <Image
-              className="plan-info-box-item-img"
+              className="plan__item-img"
               src="/images/meal-01.png"
               alt="meal"
               width={210}
@@ -38,7 +38,7 @@ const Page: NextPageWithLayout = () => {
           </div>
         </div>
       </div>
-      <div className="plan-items">
+      <div className="plan__row">
         <PlanCard
           mealCount={6}
           mealPrice="11.99"
@@ -56,7 +56,7 @@ const Page: NextPageWithLayout = () => {
           href="/signup/meal?choose=14"
         />
       </div>
-      <p className="plan-message">
+      <p className="plan__message">
         * Shipping added at checkout where applicable
       </p>
     </div>

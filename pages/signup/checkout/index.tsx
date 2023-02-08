@@ -19,20 +19,18 @@ const Page = () => {
   const subTotal = useSelector(selectSubtotal);
 
   return (
-    <div className="checkout-wrapper">
+    <div className="checkout__wrapper">
       <div className="checkout">
-        <div className="checkout-delivery checkout-section">
-          <div className="checkout-delivery-header checkout-section-header">
-            Delivery Details
-          </div>
-          <div className="checkout-delivery-card checkout-section-card">
-            <div className="checkout-delivery-card-title">Name</div>
-            <div className="checkout-delivery-card-names">
+        <div className="checkout__delivery checkout__section">
+          <div className="checkout__header">Delivery Details</div>
+          <div className="checkout__card checkout__section-card">
+            <div className="checkout__card-title">Name</div>
+            <div className="checkout__names">
               <Input placeholder="First Name" autoComplete="given-name" />
               <Input placeholder="Last Name" autoComplete="family-name" />
             </div>
-            <div className="checkout-delivery-card-title">Location</div>
-            <div className="checkout-delivery-card-address">
+            <div className="checkout__card-title">Location</div>
+            <div className="checkout__address">
               <Input
                 placeholder="Address Line 1"
                 autoComplete="address-line1"
@@ -42,7 +40,7 @@ const Page = () => {
                 autoComplete="address-line2"
               />
 
-              <div className="checkout-delivery-card-address-level">
+              <div className="checkout__row">
                 <Input placeholder="City" autoComplete="address-level2" />
                 <Input placeholder="State" autoComplete="address-level1" />
                 <Input
@@ -52,10 +50,8 @@ const Page = () => {
                 />
               </div>
             </div>
-            <div className="checkout-delivery-card-title">
-              Signup Information
-            </div>
-            <div className="checkout-delivery-card-info">
+            <div className="checkout__card-title">Signup Information</div>
+            <div className="checkout__info">
               <Input placeholder="Mobile Number" autoComplete="tel" />
               <Input
                 placeholder="Email Address"
@@ -70,45 +66,39 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className="checkout-summary checkout-section">
-          <div className="checkout-summary-header checkout-section-header">
-            Order Summary
-          </div>
-          <div className="checkout-summary-card checkout-section-card">
-            <div className="checkout-summary-card-header">
-              <h1 className="checkout-summary-card-header-title">My Meals</h1>
+        <div className="checkout-summary checkout__section">
+          <div className="checkout__header">Order Summary</div>
+          <div className="checkout-summary__card checkout__section-card">
+            <div className="checkout-summary__header">
+              <h1 className="checkout-summary__title">My Meals</h1>
             </div>
-            <div className="checkout-summary-card-items">
+            <div className="checkout-summary__items">
               {items.map((cartItem) => (
                 <MealCheckoutItem cartItem={cartItem} key={cartItem.id} />
               ))}
             </div>
           </div>
-          <div className="checkout-summary-bill">
-            <div className="checkout-summary-bill-info">
-              <div className="checkout-summary-bill-info-label">
+          <div className="checkout-summary__bill">
+            <div className="checkout-summary__info">
+              <div className="checkout-summary__label">
                 {mpw} Meal Plan Price
               </div>
-              <div className="checkout-summary-bill-info-value">
-                ${planPrice}
-              </div>
+              <div className="checkout-summary__value">${planPrice}</div>
             </div>
-            <div className="checkout-summary-bill-info">
-              <div className="checkout-summary-bill-info-label">Add-Ons</div>
-              <div className="checkout-summary-bill-info-value">
-                ${addonPrice}
-              </div>
+            <div className="checkout-summary__info">
+              <div className="checkout-summary__label">Add-Ons</div>
+              <div className="checkout-summary__value">${addonPrice}</div>
             </div>
-            <div className="checkout-summary-bill-divider"></div>
-            <div className="checkout-summary-bill-info">
-              <div className="checkout-summary-bill-info-label checkout-summary-bill-info-label--primary">
+            <div className="checkout-summary__divider"></div>
+            <div className="checkout-summary__info">
+              <div className="checkout-summary__label checkout-summary__label--primary">
                 {"Today's Total"}
               </div>
-              <div className="checkout-summary-bill-info-value checkout-summary-bill-info-value--primary">
+              <div className="checkout-summary__value checkout-summary__value--primary">
                 ${subTotal}
               </div>
             </div>
-            <button className="checkout-summary-bill-btn">Order Meals</button>
+            <button className="checkout-summary__btn">Order Meals</button>
           </div>
         </div>
       </div>

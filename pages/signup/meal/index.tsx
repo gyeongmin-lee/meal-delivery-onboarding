@@ -49,18 +49,18 @@ const Page = ({ meals }: { meals: MealGroup[] }) => {
   }, [filterValue, meals]);
 
   return (
-    <div className="mealpage-wrapper">
+    <div className="mealpage__wrapper">
       <div className="mealpage">
-        <div className="mealpage-sidebar-wrapper">
-          <div className="mealpage-sidebar">
+        <div className="mealpage__side-wrapper">
+          <div className="mealpage__sidebar">
             {meals &&
               meals.map((meal) => (
                 <Link
-                  className="mealpage-sidebar-item"
+                  className="mealpage__side-item"
                   key={meal.title}
                   spy={true}
                   smooth={true}
-                  activeClass="mealpage-sidebar-item--active"
+                  activeClass="mealpage__side-item--active"
                   to={meal.title}
                   duration={500}
                   offset={-216}
@@ -70,8 +70,8 @@ const Page = ({ meals }: { meals: MealGroup[] }) => {
               ))}
           </div>
         </div>
-        <div className="mealpage-items">
-          <div className="mealpage-items-bar">
+        <div className="mealpage__items">
+          <div className="mealpage__control">
             <Dropdown
               options={[
                 FILTER_OPTIONS.NONE,
@@ -85,16 +85,16 @@ const Page = ({ meals }: { meals: MealGroup[] }) => {
               onChange={(arg) => setFilterValue(arg.value as FILTER_OPTIONS)}
             />
             <button
-              className="mealpage-items-bar-btn"
+              className="mealpage__control__btn"
               onClick={chooseRecommended}
             >
-              <p className="mealpage-items-bar-btn-title">CHOOSE FOR ME</p>
-              <p className="mealpage-items-bar-btn-subtitle">
+              <p className="mealpage__control__btn-title">CHOOSE FOR ME</p>
+              <p className="mealpage__control__btn-subtitle">
                 Based on Customer Favorites
               </p>
             </button>
           </div>
-          <div className="mealpage-items-container">
+          <div className="mealpage__list">
             {filteredMeal &&
               filteredMeal.map((mealGroup) => (
                 <MealGroupComponent
@@ -104,7 +104,7 @@ const Page = ({ meals }: { meals: MealGroup[] }) => {
               ))}
           </div>
         </div>
-        <div className="mealpage-cart-wrapper">
+        <div className="mealpage__cart-wrapper">
           <MealCart mealsPerWeek={choose} />
         </div>
       </div>
