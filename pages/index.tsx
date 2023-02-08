@@ -36,6 +36,7 @@ export default function LandingPage() {
           className="landing-container__img"
           src="/images/bg.jpg"
           alt="landing"
+          priority
           width={1950}
           height={1300}
         />
