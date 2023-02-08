@@ -55,7 +55,7 @@ const MealCart = () => {
         <div className="mealcart__count">{itemCount} Items</div>
         <div className="mealcart__subtotal">
           Subtotal:{" "}
-          <span className="mealcart__info-subtotal-value">${subTotal}</span>
+          <span className="mealcart__subtotal-value">${subTotal}</span>
         </div>
       </div>
       {isEnoughItemsInCart ? (
