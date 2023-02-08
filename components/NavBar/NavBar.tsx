@@ -2,6 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useCallback } from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "../../lib/redux";
+
 import "./NavBar.scss";
 
 const NavBar = () => {
@@ -16,6 +19,8 @@ const NavBar = () => {
     },
     [router.pathname]
   );
+
+  const { mpw } = useSelector((root: RootState) => root.cart);
 
   return (
     <div className="nav">
@@ -41,7 +46,7 @@ const NavBar = () => {
             height={20}
           />
           <Link
-            href={{ pathname: "/signup/meal", query: { choose: 10 } }}
+            href={{ pathname: "/signup/meal", query: { choose: mpw ?? 10 } }}
             className={getClassName("/signup/meal")}
           >
             Meals
