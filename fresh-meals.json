@@ -64,7 +64,7 @@
           "alt": null,
           "width": 500,
           "height": 331,
-          "src": "https://dg3sdkemj1h24.cloudfront.net/apple.svg",
+          "src": "https://temp-fresh-meal-plan.s3.us-west-2.amazonaws.com/images/cantonese-shrimp-lo-mein+2.jpeg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18528976044054"
         }
@@ -82,63 +82,6 @@
         "variant_ids": [],
         "admin_graphql_api_id": "gid://shopify/ProductImage/18528976044054"
       }
-    },
-    {
-      "id": 5589161639958,
-      "title": "Christy CHak Meal  Freestyle 151",
-      "body_html": "\u003cerre\u003eGood snowboard!\u003c/erre\u003e",
-      "vendor": "TEST",
-      "product_type": "Snowboard",
-      "created_at": "2020-08-25T11:49:28-07:00",
-      "handle": "christy-chak-meal-freestyle-151",
-      "updated_at": "2020-08-25T11:49:28-07:00",
-      "published_at": "2020-08-25T11:49:28-07:00",
-      "template_suffix": null,
-      "status": "active",
-      "published_scope": "web",
-      "tags": "",
-      "admin_graphql_api_id": "gid://shopify/Product/5589161639958",
-      "variants": [
-        {
-          "id": 35608526422038,
-          "product_id": 5589161639958,
-          "title": "Default Title",
-          "price": "0.00",
-          "sku": "",
-          "position": 1,
-          "inventory_policy": "deny",
-          "compare_at_price": null,
-          "fulfillment_service": "manual",
-          "inventory_management": null,
-          "option1": "Default Title",
-          "option2": null,
-          "option3": null,
-          "created_at": "2020-08-25T11:49:28-07:00",
-          "updated_at": "2020-08-25T11:49:28-07:00",
-          "taxable": true,
-          "barcode": null,
-          "grams": 0,
-          "image_id": null,
-          "weight": 0.0,
-          "weight_unit": "lb",
-          "inventory_item_id": 37727865765910,
-          "inventory_quantity": 0,
-          "old_inventory_quantity": 0,
-          "requires_shipping": true,
-          "admin_graphql_api_id": "gid://shopify/ProductVariant/35608526422038"
-        }
-      ],
-      "options": [
-        {
-          "id": 7137131233302,
-          "product_id": 5589161639958,
-          "name": "Title",
-          "position": 1,
-          "values": ["Default Title"]
-        }
-      ],
-      "images": [],
-      "image": null
     },
     {
       "id": 5588344864790,
@@ -232,7 +175,7 @@
           "alt": null,
           "width": 500,
           "height": 331,
-          "src": "https://dg3sdkemj1h24.cloudfront.net/broccoli.svg",
+          "src": "https://temp-fresh-meal-plan.s3.us-west-2.amazonaws.com/images/cinamon-raisin-french-toast.jpeg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18528975749142"
         }
@@ -315,7 +258,7 @@
           "alt": null,
           "width": 500,
           "height": 331,
-          "src": "https://dg3sdkemj1h24.cloudfront.net/donut.svg",
+          "src": "https://temp-fresh-meal-plan.s3.us-west-2.amazonaws.com/images/cinamon-raisin-pancakes.jpeg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18528975978518"
         }
@@ -332,145 +275,6 @@
         "src": "https://dg3sdkemj1h24.cloudfront.net/drumstick.svg",
         "variant_ids": [],
         "admin_graphql_api_id": "gid://shopify/ProductImage/18528975978518"
-      }
-    },
-    {
-      "id": 5589456158742,
-      "title": "Classic Print",
-      "body_html": "",
-      "vendor": "freshmealplans-demo",
-      "product_type": "",
-      "created_at": "2020-08-27T07:38:51-07:00",
-      "handle": "classic-print",
-      "updated_at": "2020-08-27T07:38:54-07:00",
-      "published_at": "2020-08-27T07:38:53-07:00",
-      "template_suffix": "",
-      "status": "active",
-      "published_scope": "web",
-      "tags": "",
-      "admin_graphql_api_id": "gid://shopify/Product/5589456158742",
-      "variants": [
-        {
-          "id": 35609418858518,
-          "product_id": 5589456158742,
-          "title": "Small",
-          "price": "70.00",
-          "sku": "",
-          "position": 1,
-          "inventory_policy": "deny",
-          "compare_at_price": null,
-          "fulfillment_service": "manual",
-          "inventory_management": null,
-          "option1": "Small",
-          "option2": null,
-          "option3": null,
-          "created_at": "2020-08-27T07:38:52-07:00",
-          "updated_at": "2020-08-27T07:38:52-07:00",
-          "taxable": true,
-          "barcode": "",
-          "grams": 0,
-          "image_id": null,
-          "weight": 0.0,
-          "weight_unit": "lb",
-          "inventory_item_id": 37728758202390,
-          "inventory_quantity": 1000,
-          "old_inventory_quantity": 1000,
-          "requires_shipping": true,
-          "admin_graphql_api_id": "gid://shopify/ProductVariant/35609418858518"
-        },
-        {
-          "id": 35609418891286,
-          "product_id": 5589456158742,
-          "title": "Medium",
-          "price": "70.00",
-          "sku": "",
-          "position": 2,
-          "inventory_policy": "deny",
-          "compare_at_price": null,
-          "fulfillment_service": "manual",
-          "inventory_management": null,
-          "option1": "Medium",
-          "option2": null,
-          "option3": null,
-          "created_at": "2020-08-27T07:38:52-07:00",
-          "updated_at": "2020-08-27T07:38:52-07:00",
-          "taxable": true,
-          "barcode": "",
-          "grams": 0,
-          "image_id": null,
-          "weight": 0.0,
-          "weight_unit": "lb",
-          "inventory_item_id": 37728758235158,
-          "inventory_quantity": 1000,
-          "old_inventory_quantity": 1000,
-          "requires_shipping": true,
-          "admin_graphql_api_id": "gid://shopify/ProductVariant/35609418891286"
-        },
-        {
-          "id": 35609418924054,
-          "product_id": 5589456158742,
-          "title": "Classic",
-          "price": "70.00",
-          "sku": "",
-          "position": 3,
-          "inventory_policy": "deny",
-          "compare_at_price": null,
-          "fulfillment_service": "manual",
-          "inventory_management": null,
-          "option1": "Classic",
-          "option2": null,
-          "option3": null,
-          "created_at": "2020-08-27T07:38:52-07:00",
-          "updated_at": "2020-08-27T07:38:52-07:00",
-          "taxable": true,
-          "barcode": "",
-          "grams": 0,
-          "image_id": null,
-          "weight": 0.0,
-          "weight_unit": "lb",
-          "inventory_item_id": 37728758267926,
-          "inventory_quantity": 1000,
-          "old_inventory_quantity": 1000,
-          "requires_shipping": true,
-          "admin_graphql_api_id": "gid://shopify/ProductVariant/35609418924054"
-        }
-      ],
-      "options": [
-        {
-          "id": 7137456619542,
-          "product_id": 5589456158742,
-          "name": "Size",
-          "position": 1,
-          "values": ["Small", "Medium", "Classic"]
-        }
-      ],
-      "images": [
-        {
-          "id": 18531697459222,
-          "product_id": 5589456158742,
-          "position": 1,
-          "created_at": "2020-08-27T07:38:54-07:00",
-          "updated_at": "2020-08-27T07:38:54-07:00",
-          "alt": null,
-          "width": 600,
-          "height": 533,
-          "src": "https://dg3sdkemj1h24.cloudfront.net/ham.svg",
-          "variant_ids": [],
-          "admin_graphql_api_id": "gid://shopify/ProductImage/18531697459222"
-        }
-      ],
-      "image": {
-        "id": 18531697459222,
-        "product_id": 5589456158742,
-        "position": 1,
-        "created_at": "2020-08-27T07:38:54-07:00",
-        "updated_at": "2020-08-27T07:38:54-07:00",
-        "alt": null,
-        "width": 600,
-        "height": 533,
-        "src": "https://dg3sdkemj1h24.cloudfront.net/hamburger.svg",
-        "variant_ids": [],
-        "admin_graphql_api_id": "gid://shopify/ProductImage/18531697459222"
       }
     },
     {
@@ -537,7 +341,7 @@
           "alt": null,
           "width": 500,
           "height": 331,
-          "src": "https://dg3sdkemj1h24.cloudfront.net/hot-dog.svg",
+          "src": "https://temp-fresh-meal-plan.s3.us-west-2.amazonaws.com/images/coconut-curried-cod.jpeg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18528976011286"
         }
@@ -648,7 +452,7 @@
           "alt": null,
           "width": 500,
           "height": 331,
-          "src": "https://dg3sdkemj1h24.cloudfront.net/pear.svg",
+          "src": "https://temp-fresh-meal-plan.s3.us-west-2.amazonaws.com/images/garden-frittata.jpeg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18528975618070"
         }
@@ -669,8 +473,8 @@
     },
     {
       "id": 5588344995862,
-      "title": "Garden Vegetable Frittata",
-      "body_html": "279 Calories, 16g Protein, 29g Carbs, 11g Fats",
+      "title": "Mushroom Frittata",
+      "body_html": "312 Calories, 20g Protein, 23g Carbs, 13g Fats",
       "vendor": "freshmealplans-demo",
       "product_type": "Paleo",
       "created_at": "2020-08-17T07:48:34-07:00",
@@ -731,7 +535,7 @@
           "alt": null,
           "width": 500,
           "height": 331,
-          "src": "https://dg3sdkemj1h24.cloudfront.net/potatoes.svg",
+          "src": "https://temp-fresh-meal-plan.s3.us-west-2.amazonaws.com/images/mushroom-frittata.jpeg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18528975912982"
         }
@@ -748,117 +552,6 @@
         "src": "https://dg3sdkemj1h24.cloudfront.net/salmon.svg",
         "variant_ids": [],
         "admin_graphql_api_id": "gid://shopify/ProductImage/18528975912982"
-      }
-    },
-    {
-      "id": 5588397424662,
-      "title": "Garden Vegetable Frittata Auto renew",
-      "body_html": "WARNING: This product is for Recharge Subscriptions use  only, do not publish or delete this product. Customers will not see this message.",
-      "vendor": "freshmealplans-demo",
-      "product_type": "",
-      "created_at": "2020-08-17T17:58:48-07:00",
-      "handle": "garden-vegetable-frittata-2",
-      "updated_at": "2020-08-17T17:58:48-07:00",
-      "published_at": null,
-      "template_suffix": "",
-      "status": "active",
-      "published_scope": "web",
-      "tags": "Subscription",
-      "admin_graphql_api_id": "gid://shopify/Product/5588397424662",
-      "variants": [
-        {
-          "id": 35606399713302,
-          "product_id": 5588397424662,
-          "title": "Regular",
-          "price": "10.90",
-          "sku": "",
-          "position": 1,
-          "inventory_policy": "continue",
-          "compare_at_price": null,
-          "fulfillment_service": "manual",
-          "inventory_management": null,
-          "option1": "Regular",
-          "option2": null,
-          "option3": null,
-          "created_at": "2020-08-17T17:58:48-07:00",
-          "updated_at": "2020-08-17T17:58:48-07:00",
-          "taxable": true,
-          "barcode": "",
-          "grams": 0,
-          "image_id": null,
-          "weight": 0.0,
-          "weight_unit": "lb",
-          "inventory_item_id": 37725738991638,
-          "inventory_quantity": 0,
-          "old_inventory_quantity": 0,
-          "requires_shipping": true,
-          "admin_graphql_api_id": "gid://shopify/ProductVariant/35606399713302"
-        },
-        {
-          "id": 35606399746070,
-          "product_id": 5588397424662,
-          "title": "Large",
-          "price": "10.90",
-          "sku": "",
-          "position": 2,
-          "inventory_policy": "continue",
-          "compare_at_price": null,
-          "fulfillment_service": "manual",
-          "inventory_management": null,
-          "option1": "Large",
-          "option2": null,
-          "option3": null,
-          "created_at": "2020-08-17T17:58:48-07:00",
-          "updated_at": "2020-08-17T17:58:48-07:00",
-          "taxable": true,
-          "barcode": "",
-          "grams": 0,
-          "image_id": null,
-          "weight": 0.0,
-          "weight_unit": "lb",
-          "inventory_item_id": 37725739024406,
-          "inventory_quantity": 0,
-          "old_inventory_quantity": 0,
-          "requires_shipping": true,
-          "admin_graphql_api_id": "gid://shopify/ProductVariant/35606399746070"
-        }
-      ],
-      "options": [
-        {
-          "id": 7136211763222,
-          "product_id": 5588397424662,
-          "name": "Size",
-          "position": 1,
-          "values": ["Regular", "Large"]
-        }
-      ],
-      "images": [
-        {
-          "id": 18529190215702,
-          "product_id": 5588397424662,
-          "position": 1,
-          "created_at": "2020-08-17T17:58:48-07:00",
-          "updated_at": "2020-08-17T17:58:48-07:00",
-          "alt": null,
-          "width": 500,
-          "height": 331,
-          "src": "https://dg3sdkemj1h24.cloudfront.net/steak.svg",
-          "variant_ids": [],
-          "admin_graphql_api_id": "gid://shopify/ProductImage/18529190215702"
-        }
-      ],
-      "image": {
-        "id": 18529190215702,
-        "product_id": 5588397424662,
-        "position": 1,
-        "created_at": "2020-08-17T17:58:48-07:00",
-        "updated_at": "2020-08-17T17:58:48-07:00",
-        "alt": null,
-        "width": 500,
-        "height": 331,
-        "src": "https://dg3sdkemj1h24.cloudfront.net/apple.svg",
-        "variant_ids": [],
-        "admin_graphql_api_id": "gid://shopify/ProductImage/18529190215702"
       }
     },
     {
@@ -925,7 +618,7 @@
           "alt": null,
           "width": 500,
           "height": 331,
-          "src": "https://dg3sdkemj1h24.cloudfront.net/bananas.svg",
+          "src": "https://temp-fresh-meal-plan.s3.us-west-2.amazonaws.com/images/honey-pecan-chicken.jpeg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18528976076822"
         }
@@ -1036,7 +729,7 @@
           "alt": null,
           "width": 500,
           "height": 331,
-          "src": "https://dg3sdkemj1h24.cloudfront.net/carrot.svg",
+          "src": "https://temp-fresh-meal-plan.s3.us-west-2.amazonaws.com/images/korean-bbq-chicken-taco.jpeg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18528975814678"
         }
@@ -1147,7 +840,7 @@
           "alt": null,
           "width": 500,
           "height": 331,
-          "src": "https://dg3sdkemj1h24.cloudfront.net/donut.svg",
+          "src": "https://temp-fresh-meal-plan.s3.us-west-2.amazonaws.com/images/steak-egg.jpeg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18528975716374"
         }
@@ -1258,7 +951,7 @@
           "alt": null,
           "width": 500,
           "height": 331,
-          "src": "https://dg3sdkemj1h24.cloudfront.net/ham.svg",
+          "src": "https://temp-fresh-meal-plan.s3.us-west-2.amazonaws.com/images/strawberry-pancake.jpeg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18528975683606"
         }
@@ -1279,7 +972,7 @@
     },
     {
       "id": 5588345028630,
-      "title": "Strawberry Almond Pancakes",
+      "title": "Blueberry Pancakes",
       "body_html": "459 Calories, 22g Protein, 32g Carbs, 27g Fats",
       "vendor": "freshmealplans-demo",
       "product_type": "Paleo",
@@ -1341,7 +1034,7 @@
           "alt": null,
           "width": 500,
           "height": 331,
-          "src": "https://dg3sdkemj1h24.cloudfront.net/hot-dog.svg",
+          "src": "https://temp-fresh-meal-plan.s3.us-west-2.amazonaws.com/images/blueberry-pancake.jpeg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18528975945750"
         }
@@ -1359,63 +1052,6 @@
         "variant_ids": [],
         "admin_graphql_api_id": "gid://shopify/ProductImage/18528975945750"
       }
-    },
-    {
-      "id": 5589161541654,
-      "title": "TEST  Freestyle 151",
-      "body_html": "\u003cerre\u003eGood snowboard!\u003c/erre\u003e",
-      "vendor": "TEST",
-      "product_type": "Snowboard",
-      "created_at": "2020-08-25T11:49:12-07:00",
-      "handle": "test-freestyle-151",
-      "updated_at": "2020-08-25T11:49:12-07:00",
-      "published_at": "2020-08-25T11:49:12-07:00",
-      "template_suffix": null,
-      "status": "active",
-      "published_scope": "web",
-      "tags": "",
-      "admin_graphql_api_id": "gid://shopify/Product/5589161541654",
-      "variants": [
-        {
-          "id": 35608526323734,
-          "product_id": 5589161541654,
-          "title": "Default Title",
-          "price": "0.00",
-          "sku": "",
-          "position": 1,
-          "inventory_policy": "deny",
-          "compare_at_price": null,
-          "fulfillment_service": "manual",
-          "inventory_management": null,
-          "option1": "Default Title",
-          "option2": null,
-          "option3": null,
-          "created_at": "2020-08-25T11:49:12-07:00",
-          "updated_at": "2020-08-25T11:49:12-07:00",
-          "taxable": true,
-          "barcode": null,
-          "grams": 0,
-          "image_id": null,
-          "weight": 0.0,
-          "weight_unit": "lb",
-          "inventory_item_id": 37727865667606,
-          "inventory_quantity": 0,
-          "old_inventory_quantity": 0,
-          "requires_shipping": true,
-          "admin_graphql_api_id": "gid://shopify/ProductVariant/35608526323734"
-        }
-      ],
-      "options": [
-        {
-          "id": 7137131134998,
-          "product_id": 5589161541654,
-          "name": "Title",
-          "position": 1,
-          "values": ["Default Title"]
-        }
-      ],
-      "images": [],
-      "image": null
     },
     {
       "id": 5588344897558,
@@ -1481,7 +1117,173 @@
           "alt": null,
           "width": 500,
           "height": 331,
-          "src": "https://dg3sdkemj1h24.cloudfront.net/pear.svg",
+          "src": "https://temp-fresh-meal-plan.s3.us-west-2.amazonaws.com/images/mushroom-bacon-breakfast.jpeg",
+          "variant_ids": [],
+          "admin_graphql_api_id": "gid://shopify/ProductImage/18528975781910"
+        }
+      ],
+      "image": {
+        "id": 18528975781910,
+        "product_id": 5588344897558,
+        "position": 1,
+        "created_at": "2020-08-17T07:46:30-07:00",
+        "updated_at": "2020-08-17T07:46:30-07:00",
+        "alt": null,
+        "width": 500,
+        "height": 331,
+        "src": "https://dg3sdkemj1h24.cloudfront.net/pepper.svg",
+        "variant_ids": [],
+        "admin_graphql_api_id": "gid://shopify/ProductImage/18528975781910"
+      }
+    },
+    {
+      "id": 5588344897559,
+      "title": "Keto Beef Burgers",
+      "body_html": "692 Calories, 55g Protein, 29g Carbs, 40g Fats",
+      "vendor": "freshmealplans-demo",
+      "product_type": "",
+      "created_at": "2020-08-17T07:46:21-07:00",
+      "handle": "wild-mushroom-and-bacon-breakfast-bowl",
+      "updated_at": "2020-08-17T10:59:52-07:00",
+      "published_at": "2020-08-17T07:46:21-07:00",
+      "template_suffix": "",
+      "status": "active",
+      "published_scope": "web",
+      "tags": "Keto",
+      "admin_graphql_api_id": "gid://shopify/Product/5588344897558",
+      "variants": [
+        {
+          "id": 35606192455702,
+          "product_id": 5588344897558,
+          "title": "Default Title",
+          "price": "10.90",
+          "sku": "",
+          "position": 1,
+          "inventory_policy": "deny",
+          "compare_at_price": null,
+          "fulfillment_service": "manual",
+          "inventory_management": null,
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "created_at": "2020-08-17T07:46:21-07:00",
+          "updated_at": "2020-08-17T10:59:52-07:00",
+          "taxable": true,
+          "barcode": "",
+          "grams": 0,
+          "image_id": null,
+          "weight": 0.0,
+          "weight_unit": "lb",
+          "inventory_item_id": 37725531734038,
+          "inventory_quantity": 0,
+          "old_inventory_quantity": 0,
+          "requires_shipping": true,
+          "admin_graphql_api_id": "gid://shopify/ProductVariant/35606192455702"
+        }
+      ],
+      "options": [
+        {
+          "id": 7136156319766,
+          "product_id": 5588344897558,
+          "name": "Title",
+          "position": 1,
+          "values": ["Default Title"]
+        }
+      ],
+      "images": [
+        {
+          "id": 18528975781910,
+          "product_id": 5588344897558,
+          "position": 1,
+          "created_at": "2020-08-17T07:46:30-07:00",
+          "updated_at": "2020-08-17T07:46:30-07:00",
+          "alt": null,
+          "width": 500,
+          "height": 331,
+          "src": "https://temp-fresh-meal-plan.s3.us-west-2.amazonaws.com/images/keto-burger.jpeg",
+          "variant_ids": [],
+          "admin_graphql_api_id": "gid://shopify/ProductImage/18528975781910"
+        }
+      ],
+      "image": {
+        "id": 18528975781910,
+        "product_id": 5588344897558,
+        "position": 1,
+        "created_at": "2020-08-17T07:46:30-07:00",
+        "updated_at": "2020-08-17T07:46:30-07:00",
+        "alt": null,
+        "width": 500,
+        "height": 331,
+        "src": "https://dg3sdkemj1h24.cloudfront.net/pepper.svg",
+        "variant_ids": [],
+        "admin_graphql_api_id": "gid://shopify/ProductImage/18528975781910"
+      }
+    },
+    {
+      "id": 5588344897560,
+      "title": "Keto Southwest Chicken",
+      "body_html": "498 Calories, 59g Protein, 16g Carbs, 22g Fats",
+      "vendor": "freshmealplans-demo",
+      "product_type": "",
+      "created_at": "2020-08-17T07:46:21-07:00",
+      "handle": "wild-mushroom-and-bacon-breakfast-bowl",
+      "updated_at": "2020-08-17T10:59:52-07:00",
+      "published_at": "2020-08-17T07:46:21-07:00",
+      "template_suffix": "",
+      "status": "active",
+      "published_scope": "web",
+      "tags": "Keto",
+      "admin_graphql_api_id": "gid://shopify/Product/5588344897558",
+      "variants": [
+        {
+          "id": 35606192455702,
+          "product_id": 5588344897558,
+          "title": "Default Title",
+          "price": "10.90",
+          "sku": "",
+          "position": 1,
+          "inventory_policy": "deny",
+          "compare_at_price": null,
+          "fulfillment_service": "manual",
+          "inventory_management": null,
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "created_at": "2020-08-17T07:46:21-07:00",
+          "updated_at": "2020-08-17T10:59:52-07:00",
+          "taxable": true,
+          "barcode": "",
+          "grams": 0,
+          "image_id": null,
+          "weight": 0.0,
+          "weight_unit": "lb",
+          "inventory_item_id": 37725531734038,
+          "inventory_quantity": 0,
+          "old_inventory_quantity": 0,
+          "requires_shipping": true,
+          "admin_graphql_api_id": "gid://shopify/ProductVariant/35606192455702"
+        }
+      ],
+      "options": [
+        {
+          "id": 7136156319766,
+          "product_id": 5588344897558,
+          "name": "Title",
+          "position": 1,
+          "values": ["Default Title"]
+        }
+      ],
+      "images": [
+        {
+          "id": 18528975781910,
+          "product_id": 5588344897558,
+          "position": 1,
+          "created_at": "2020-08-17T07:46:30-07:00",
+          "updated_at": "2020-08-17T07:46:30-07:00",
+          "alt": null,
+          "width": 500,
+          "height": 331,
+          "src": "https://temp-fresh-meal-plan.s3.us-west-2.amazonaws.com/images/keto-chicken.jpeg",
           "variant_ids": [],
           "admin_graphql_api_id": "gid://shopify/ProductImage/18528975781910"
         }

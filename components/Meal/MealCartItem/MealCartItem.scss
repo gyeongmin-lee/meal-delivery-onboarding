@@ -11,13 +11,14 @@ $image-dimension: 56px;
     width: $image-dimension;
     height: $image-dimension;
     margin: 12px;
+    border-radius: $border-radius-tiny;
     object-fit: fill;
     object-position: 43% 50%;
   }
 
   &-body {
     display: grid;
-    padding: 0px 12px;
+    padding: 0px 6px;
     align-content: center;
     grid-template-rows: min-content min-content;
     row-gap: 12px;

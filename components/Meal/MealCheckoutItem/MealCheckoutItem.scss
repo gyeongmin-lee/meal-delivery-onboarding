@@ -1,6 +1,6 @@
 @import "styles/_styles.scss";
 
-$image-dimension: 46px;
+$image-dimension: 48px;
 
 .mlckitem {
   display: grid;
@@ -10,9 +10,10 @@ $image-dimension: 46px;
   &-img {
     width: $image-dimension;
     height: $image-dimension;
-    margin: 12px;
+    margin: 10px;
     object-fit: contain;
     object-position: 43% 50%;
+    border-radius: $border-radius-tiny;
   }
 
   &-body {
@@ -20,7 +21,7 @@ $image-dimension: 46px;
     align-content: center;
     align-items: center;
     grid-template-columns: 1fr min-content;
-    padding: 4px 12px;
+    padding: 4px 12px 4px 6px;
     column-gap: 40px;
 
     &-section {

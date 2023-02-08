@@ -14,6 +14,16 @@ const nextConfig = {
     });
     return config;
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "temp-fresh-meal-plan.s3.us-west-2.amazonaws.com",
+        port: "",
+        pathname: "/images/**",
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;

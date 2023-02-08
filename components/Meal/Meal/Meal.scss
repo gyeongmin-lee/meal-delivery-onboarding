@@ -26,11 +26,8 @@
   }
 
   &-img {
-    width: calc(100% - 72px);
-    height: 225px;
-    margin: 12px 36px;
-    object-fit: contain;
-    object-position: 45% 50%;
+    width: 100%;
+    height: auto;
     border-top-left-radius: $border-radius-large;
     border-top-right-radius: $border-radius-large;
     @include desktop {
