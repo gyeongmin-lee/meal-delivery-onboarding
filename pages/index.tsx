@@ -32,6 +32,13 @@ export default function LandingPage() {
         </div>
       </div>
       <div className="landing-container">
+        <Image
+          className="landing-container-img"
+          src="/images/bg.jpg"
+          alt="landing"
+          width={1950}
+          height={1300}
+        />
         <div className="landing-container-form">
           <form className="landing-container-form-box">
             <h1 className="landing-container-form-box-header1">

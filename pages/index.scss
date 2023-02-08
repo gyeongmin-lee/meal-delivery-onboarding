@@ -67,9 +67,6 @@
 }
 
 .landing-container {
-  background-image: url("/images/bg.jpg");
-  @include bg-cover;
-
   display: grid;
   height: 532px;
 
@@ -79,6 +76,16 @@
   @include mobile {
     padding: 0 24px;
     justify-content: center;
+  }
+
+  &-img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 532px;
+    object-fit: cover;
+    object-position: center;
   }
 
   &-form {
