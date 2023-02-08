@@ -1,0 +1,44 @@
+@import "styles/_styles.scss";
+
+$image-dimension: 48px;
+
+.mlckitem {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  background-color: $white;
+
+  &__img {
+    width: $image-dimension;
+    height: $image-dimension;
+    margin: 10px;
+    object-fit: contain;
+    object-position: 43% 50%;
+    border-radius: $border-radius-tiny;
+  }
+
+  &__body {
+    display: grid;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: 1fr min-content;
+    padding: 4px 12px 4px 6px;
+    column-gap: 40px;
+  }
+
+  &__title {
+    font-size: $font-size-small;
+    font-weight: 600;
+    color: $text-color;
+    margin-bottom: 4px;
+  }
+
+  &__subtitle {
+    font-size: $font-size-tiny;
+    color: $text-color-darkgrey;
+  }
+
+  &__quantity {
+    font-weight: bold;
+    font-size: $font-size-default;
+  }
+}

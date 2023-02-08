@@ -1,0 +1,36 @@
+@import "styles/_styles.scss";
+
+$image-dimension: 56px;
+
+.mci {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  background-color: $white;
+
+  &__img {
+    width: $image-dimension;
+    height: $image-dimension;
+    margin: 12px;
+    border-radius: $border-radius-tiny;
+    object-fit: fill;
+    object-position: 43% 50%;
+  }
+
+  &__body {
+    display: grid;
+    padding: 0px 6px;
+    align-content: center;
+    grid-template-rows: min-content min-content;
+    row-gap: 12px;
+  }
+
+  &__header {
+    font-weight: 600;
+    font-size: $font-size-small;
+    letter-spacing: $letter-space-default;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

@@ -1,0 +1,41 @@
+@import "styles/_styles.scss";
+
+.counter {
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  align-items: center;
+
+  &__btn {
+    background-color: $bg-white-light;
+    color: $text-color;
+    font-weight: bold;
+    height: $counter-dimension;
+    width: $counter-dimension;
+    padding: 0;
+    border-radius: $counter-dimension / 2;
+    &:hover {
+      box-shadow: 0 0 0 4px lighten($bg-white-light, 3%);
+    }
+  }
+
+  &__value {
+    font-size: $font-size-small;
+    font-weight: bold;
+    color: $text-color;
+    width: 32px;
+    text-align: center;
+  }
+
+  &--small &__btn {
+    width: 20px;
+    height: 20px;
+    &:hover {
+      box-shadow: 0 0 0 4px lighten($bg-white-light, 3%);
+    }
+  }
+
+  &--small &__value {
+    width: 24px;
+    font-size: $font-size-tiny;
+  }
+}

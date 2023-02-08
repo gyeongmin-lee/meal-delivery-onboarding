@@ -1,0 +1,85 @@
+@import "styles/_styles.scss";
+
+.mealcart {
+  background-color: $text-color-white;
+  box-shadow: $card-shadow;
+  border-radius: $border-radius-large;
+  height: 560px;
+
+  @include sticky-top;
+  @include mobile {
+    position: relative;
+    top: 0;
+    height: 360px;
+  }
+  display: grid;
+  grid-template-rows: min-content 1fr min-content min-content;
+
+  &__header {
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top-left-radius: $border-radius-large;
+    border-top-right-radius: $border-radius-large;
+    padding: 16px 24px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: $letter-space-default;
+  }
+
+  &__clear {
+    background: transparent;
+    border: 2px solid $text-color-grey;
+    border-radius: 30px;
+    color: $text-color-grey;
+    font-size: 0.6rem;
+    font-weight: bold;
+    letter-spacing: $letter-space-narrow;
+    padding: 3px 12px;
+    @include hover-small;
+  }
+
+  &__items {
+    margin: 2px 0;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    row-gap: 2px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: $letter-space-default;
+    height: 48px;
+    background-color: $white;
+    padding: 0 16px;
+  }
+
+  &__count {
+    font-size: $font-size-tiny;
+  }
+
+  &__subtotal {
+    font-size: $font-size-small;
+  }
+
+  &__subtotal-value {
+    font-weight: bold;
+  }
+
+  &__btn {
+    @include card-bottom-primary-button;
+
+    &--disabled {
+      opacity: 0.75;
+      cursor: default;
+    }
+  }
+}

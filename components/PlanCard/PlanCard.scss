@@ -1,0 +1,104 @@
+@import "styles/_styles.scss";
+
+$card-padding: 30px;
+
+.plancard {
+  text-decoration: inherit;
+  color: inherit;
+
+  background: $card-bg;
+  @include fullhd {
+    width: 350px;
+  }
+  @include mobile {
+    width: 100%;
+  }
+  padding-top: $card-padding;
+  border-radius: $border-radius-large;
+  box-shadow: $card-shadow;
+  position: relative;
+  cursor: pointer;
+  @include hover-large;
+  &:hover {
+    .plancard-btn {
+      background-color: darken($primary-color, 15%);
+    }
+  }
+
+  &__info {
+    margin-bottom: 16px;
+    display: grid;
+    grid-template-columns: min-content min-content;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    padding: 0 $card-padding;
+  }
+
+  &__alert {
+    height: 8px;
+    width: 8px;
+    background-color: $primary-color;
+    border-radius: 4px;
+  }
+
+  &__text {
+    font-size: $font-size-tiny;
+    font-weight: 600;
+    letter-spacing: $letter-space-default;
+  }
+
+  &__btn {
+    background-color: $primary-color;
+    letter-spacing: $letter-space-default;
+    padding: 12px 0;
+    width: 100%;
+    border-bottom-left-radius: $border-radius-large;
+    border-bottom-right-radius: $border-radius-large;
+    font-weight: 600;
+  }
+
+  &__badge {
+    background-color: $secondary-color-light;
+    width: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    column-gap: 6px;
+    padding: 7px 10px;
+    border-radius: 32px;
+  }
+
+  &__badge-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -14px;
+    display: grid;
+    justify-content: center;
+  }
+
+  &__badge-img {
+    width: 14px;
+  }
+
+  &__badge-text {
+    font-size: $font-size-tiny;
+    font-weight: 500;
+    color: $secondary-color-dark;
+    letter-spacing: $letter-space-default;
+  }
+
+  &__title {
+    font-size: 2.8rem;
+    font-weight: bold;
+  }
+
+  &__subtitle {
+    font-size: 1.6rem;
+    letter-spacing: $letter-space-default;
+    margin-bottom: 16px;
+    padding: 0 $card-padding;
+  }
+}
