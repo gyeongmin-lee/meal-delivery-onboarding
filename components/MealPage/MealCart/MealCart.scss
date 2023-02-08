@@ -35,9 +35,9 @@
       border: 2px solid $text-color-grey;
       border-radius: 30px;
       color: $text-color-grey;
-      font-size: 0.5rem;
+      font-size: 0.6rem;
       font-weight: bold;
-      letter-spacing: $letter-space-default;
+      letter-spacing: $letter-space-narrow;
       padding: 3px 12px;
       @include hover-small;
     }

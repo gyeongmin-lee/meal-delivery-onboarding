@@ -21,6 +21,7 @@
   border-bottom-right-radius: $border-radius-large;
   letter-spacing: $letter-space-default;
   font-weight: 600;
+  width: 100%;
 }
 
 @mixin hover-small {

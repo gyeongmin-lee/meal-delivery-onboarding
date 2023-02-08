@@ -1,5 +1,6 @@
 import classNames from "classnames";
-import { useCallback, useEffect } from "react";
+import Link from "next/link";
+import { useCallback, useEffect, useMemo } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../../redux";
 import {
@@ -27,6 +28,21 @@ export const MealCart = ({ mealsPerWeek }: { mealsPerWeek: string }) => {
     dispatch(clearMealFromCart());
   }, [dispatch]);
 
+  const submitBtn = useMemo(
+    () => (
+      <button
+        className={classNames("mealcart-btn", {
+          "mealcart-btn--disabled": !isEnoughItemsInCart,
+        })}
+      >
+        {isEnoughItemsInCart
+          ? "Continue"
+          : `Select ${(mpw ?? 0) - itemCount} More to Continue`}
+      </button>
+    ),
+    [isEnoughItemsInCart, itemCount, mpw]
+  );
+
   return (
     <div className="mealcart">
       <div className="mealcart-header">
@@ -47,16 +63,13 @@ export const MealCart = ({ mealsPerWeek }: { mealsPerWeek: string }) => {
           <span className="mealcart-info-subtotal-value">${subTotal}</span>
         </div>
       </div>
-      <button
-        className={classNames("mealcart-btn", {
-          "mealcart-btn--disabled": !isEnoughItemsInCart,
-        })}
-        onClick={isEnoughItemsInCart ? navigateToCheckout : undefined}
-      >
-        {isEnoughItemsInCart
-          ? "Continue"
-          : `Select ${(mpw ?? 0) - itemCount} More to Continue`}
-      </button>
+      {isEnoughItemsInCart ? (
+        <Link passHref href="/signup/checkout">
+          {submitBtn}
+        </Link>
+      ) : (
+        submitBtn
+      )}
     </div>
   );
 };
