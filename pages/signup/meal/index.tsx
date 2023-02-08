@@ -1,6 +1,6 @@
 import { GetServerSideProps } from "next";
 import { useRouter } from "next/router";
-import { ReactElement, useCallback, useMemo, useState } from "react";
+import { ReactElement, useCallback, useEffect, useMemo, useState } from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-scroll";
 import Dropdown from "../../../components/Dropdown/Dropdown";
@@ -11,6 +11,7 @@ import { getMealsService, Meal, MealGroup } from "../../../lib/MealsApi";
 import {
   addMealsToCart,
   clearMealFromCart,
+  initializeCart,
 } from "../../../lib/redux/CartSlice";
 import { filterMethods, FILTER_OPTIONS } from "../../../util/FilterUtils";
 import { shuffle } from "../../../util/general";
@@ -30,11 +31,18 @@ const Page = ({ meals }: { meals: MealGroup[] }) => {
   const choose = (router.query?.choose as string) || "10";
   const mpw = parseInt(choose);
 
-  let mealList: Meal[] = [];
-  meals.forEach((mealGroup) => (mealList = [...mealList, ...mealGroup.items]));
-  const recommendedMeals = shuffle(mealList);
+  const recommendedMeals = useMemo(() => {
+    const mealList: Meal[] = [];
+    meals.forEach((mealGroup) => mealList.push(...mealGroup.items));
+    return shuffle(mealList);
+  }, [meals]);
 
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(initializeCart(mpw));
+  }, [dispatch, mpw]);
+
   const chooseRecommended = useCallback(() => {
     dispatch(clearMealFromCart());
     dispatch(addMealsToCart(recommendedMeals.slice(0, mpw)));
@@ -105,7 +113,7 @@ const Page = ({ meals }: { meals: MealGroup[] }) => {
           </div>
         </div>
         <div className="mealpage__cart-wrapper">
-          <MealCart mealsPerWeek={choose} />
+          <MealCart />
         </div>
       </div>
     </div>

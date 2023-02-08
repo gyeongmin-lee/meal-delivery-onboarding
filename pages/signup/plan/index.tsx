@@ -18,6 +18,7 @@ const Page: NextPageWithLayout = () => {
             <Image
               className="plan__item-img"
               src="/images/meal-02.png"
+              priority
               alt="meal"
               width={210}
               height={168}
@@ -31,6 +32,7 @@ const Page: NextPageWithLayout = () => {
             <Image
               className="plan__item-img"
               src="/images/meal-01.png"
+              priority
               alt="meal"
               width={210}
               height={168}

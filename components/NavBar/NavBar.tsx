@@ -49,7 +49,7 @@ const NavBar = () => {
           <Image
             src="/icons/forward.svg"
             alt=""
-            className="nav-content-step-arrow"
+            className="nav-content__arrow"
             width={20}
             height={20}
           />

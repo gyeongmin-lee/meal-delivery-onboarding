@@ -1,28 +1,23 @@
 import classNames from "classnames";
 import Link from "next/link";
-import { useCallback, useEffect, useMemo } from "react";
+import { useCallback, useMemo } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../../lib/redux";
 import {
   clearMealFromCart,
-  initializeCart,
   selectItemCount,
   selectSubtotal,
 } from "../../../lib/redux/CartSlice";
 import MealCartItem from "../MealCartItem/MealCartItem";
 import "./MealCart.scss";
 
-const MealCart = ({ mealsPerWeek }: { mealsPerWeek: string }) => {
+const MealCart = () => {
   const dispatch = useDispatch();
 
   const { items, mpw } = useSelector((root: RootState) => root.cart);
   const itemCount = useSelector(selectItemCount);
   const subTotal = useSelector(selectSubtotal);
   const isEnoughItemsInCart = mpw && itemCount >= mpw;
-
-  useEffect(() => {
-    dispatch(initializeCart(parseInt(mealsPerWeek)));
-  }, [dispatch, mealsPerWeek]);
 
   const clearMeal = useCallback(() => {
     dispatch(clearMealFromCart());
