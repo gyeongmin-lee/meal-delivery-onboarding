@@ -4,8 +4,12 @@
   height: $signup-navbar-height;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0 24px;
+}
+
+.nav-logo {
+  width: max-content;
 }
 
 .nav-content {
