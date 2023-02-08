@@ -82,6 +82,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 12px;
 
     &__btn {
       background-color: $primary-color;
@@ -89,6 +90,10 @@
       border-radius: 64px;
       color: $text-color-white;
       @include hover-large;
+
+      @include tiny-mobile {
+        min-height: 40px;
+      }
     }
 
     &__btn-title {
@@ -102,6 +107,10 @@
       font-size: 0.7rem;
       font-weight: 300;
       line-height: $font-size-tiny;
+
+      @include tiny-mobile {
+        display: none;
+      }
     }
   }
 
