@@ -41,7 +41,7 @@ const NavBar = () => {
             height={20}
           />
           <Link
-            href="/signup/meal?choose=10"
+            href={{ pathname: "/signup/meal", query: { choose: 10 } }}
             className={getClassName("/signup/meal")}
           >
             Meals

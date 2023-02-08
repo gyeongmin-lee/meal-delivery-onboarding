@@ -42,18 +42,18 @@ const Page: NextPageWithLayout = () => {
         <PlanCard
           mealCount={6}
           mealPrice="11.99"
-          href="/signup/meal?choose=6"
+          href={{ pathname: "/signup/meal", query: { choose: 6 } }}
         />
         <PlanCard
           mealCount={10}
           mealPrice="10.99"
           hasBadge
-          href="/signup/meal?choose=10"
+          href={{ pathname: "/signup/meal", query: { choose: 10 } }}
         />
         <PlanCard
           mealCount={14}
           mealPrice="9.99"
-          href="/signup/meal?choose=14"
+          href={{ pathname: "/signup/meal", query: { choose: 14 } }}
         />
       </div>
       <p className="plan__message">

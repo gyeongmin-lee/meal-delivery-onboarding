@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
+import { UrlObject } from "url";
 import "./PlanCard.scss";
 
 interface PlanCardProps {
   mealCount: number;
   mealPrice: String;
   hasBadge?: boolean;
-  href?: string;
+  href?: string | UrlObject;
 }
 
 const PlanCard: FC<PlanCardProps> = ({
