@@ -6,7 +6,7 @@
   grid-auto-rows: min-content;
   align-items: center;
   @include desktop {
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: max-content 2fr;
     grid-auto-rows: 1fr;
   }
   @include fullhd {
@@ -14,7 +14,7 @@
   }
   @include card;
 
-  &-body {
+  &__body {
     padding: 20px 20px 16px 20px;
     text-align: left;
     display: grid;
@@ -23,26 +23,31 @@
     @include desktop {
       grid-template-rows: min-content;
     }
+
+    @include tiny-mobile {
+      padding: 12px 12px 16px 12px;
+    }
   }
 
-  &-img {
+  &__img {
     width: 100%;
     height: auto;
     border-top-left-radius: $border-radius-large;
     border-top-right-radius: $border-radius-large;
     @include desktop {
-      width: 100px;
-      height: 100px;
-      margin: 24px;
+      height: 100%;
+      max-width: 150px;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: $border-radius-large;
     }
 
     @include tiny-mobile {
-      width: 85px;
-      height: 85px;
+      max-width: 120px;
+      object-fit: cover;
     }
   }
 
-  &-title {
+  &__title {
     font-weight: bold;
     letter-spacing: $letter-space-default;
     font-size: $font-size-regular;
@@ -56,56 +61,64 @@
     -webkit-line-clamp: 2;
   }
 
-  &-nutrients {
+  &__nutrients {
     display: flex;
     justify-content: space-between;
     font-size: $font-size-tiny;
     text-align: center;
     color: $text-color-darkgrey;
-
-    &-group {
-      display: grid;
-      grid-template-rows: min-content min-content;
-      row-gap: 4px;
-
-      &-title {
-        font-weight: 600;
-      }
-    }
-
     margin-bottom: 16px;
+
+    @include tiny-mobile {
+      padding: 0 6px;
+    }
   }
 
-  &-footer {
+  &__nutrients-group {
+    display: grid;
+    grid-template-rows: min-content min-content;
+    row-gap: 4px;
+  }
+
+  &__nutrients-title {
+    font-weight: 600;
+  }
+
+  &__footer {
     display: grid;
     align-items: center;
     grid-template-columns: min-content 1fr;
     grid-template: "counter button" / min-content 1fr;
+  }
 
-    &-counter {
-      grid-area: counter;
-    }
+  &__counter {
+    grid-area: counter;
+  }
 
-    &-btn {
-      grid-area: button;
+  &__btn {
+    grid-area: button;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: $counter-dimension;
-      padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: $counter-dimension;
+    padding: 0 10px;
+    font-size: $font-size-small;
+    letter-spacing: $letter-space-narrow;
+    border-radius: $counter-dimension / 2;
+    background-color: $primary-color;
+    font-weight: 500;
+    width: 100%;
+    white-space: nowrap;
+    @include hover-small;
+
+    @include mobile {
       font-size: $font-size-tiny;
-      letter-spacing: $letter-space-default;
-      border-radius: $counter-dimension / 2;
-      background-color: $primary-color;
-      font-weight: 500;
-      width: 100%;
-      @include hover-small;
-
-      &-icon {
-        margin-right: 4px;
-        font-size: $font-size-regular;
-      }
     }
+  }
+
+  &__icon {
+    margin-right: 4px;
+    font-size: $font-size-regular;
   }
 }

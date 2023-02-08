@@ -2,12 +2,12 @@
 
 $image-dimension: 56px;
 
-.mealcartitem {
+.mci {
   display: grid;
   grid-template-columns: min-content 1fr;
   background-color: $white;
 
-  &-img {
+  &__img {
     width: $image-dimension;
     height: $image-dimension;
     margin: 12px;
@@ -16,35 +16,21 @@ $image-dimension: 56px;
     object-position: 43% 50%;
   }
 
-  &-body {
+  &__body {
     display: grid;
     padding: 0px 6px;
     align-content: center;
     grid-template-rows: min-content min-content;
     row-gap: 12px;
+  }
 
-    &-header {
-      font-weight: 600;
-      font-size: $font-size-small;
-      letter-spacing: $letter-space-default;
+  &__header {
+    font-weight: 600;
+    font-size: $font-size-small;
+    letter-spacing: $letter-space-default;
 
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    &-counter {
-      .counter-btn {
-        width: 20px;
-        height: 20px;
-        &:hover {
-          box-shadow: 0 0 0 4px lighten($bg-white-light, 3%);
-        }
-      }
-
-      .counter-value {
-        width: 24px;
-      }
-    }
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }

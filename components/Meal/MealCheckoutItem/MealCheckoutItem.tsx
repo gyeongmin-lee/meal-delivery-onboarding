@@ -16,14 +16,14 @@ const MealCheckoutItem: FC<MealCheckoutItemProps> = ({ cartItem }) => {
         height={60}
         src={meal.src}
         alt={meal.title}
-        className="mlckitem-img"
+        className="mlckitem__img"
       />
-      <div className="mlckitem-body">
-        <div className="mlckitem-body-section">
-          <h1 className="mlckitem-body-section-title">{meal.title}</h1>
-          <h1 className="mlckitem-body-section-subtitle">{meal.type}</h1>
+      <div className="mlckitem__body">
+        <div>
+          <h1 className="mlckitem__title">{meal.title}</h1>
+          <h1 className="mlckitem__subtitle">{meal.type}</h1>
         </div>
-        <div className="mlckitem-body-quantity">x{quantity}</div>
+        <div className="mlckitem__quantity">x{quantity}</div>
       </div>
     </div>
   );

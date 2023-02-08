@@ -7,9 +7,9 @@ const Dropdown: FC<ReactDropdownProps> = (props) => {
   return (
     <DropDown
       className="dropdown"
-      menuClassName="dropdown-menu"
-      controlClassName="dropdown-control"
-      arrowClassName="dropdown-arrow"
+      menuClassName="dropdown__menu"
+      controlClassName="dropdown__control"
+      arrowClassName="dropdown__arrow"
       value=""
       arrowClosed={<Arrow direction="down" />}
       arrowOpen={<Arrow direction="up" />}

@@ -7,7 +7,7 @@ interface ArrowProps {
 }
 
 const Arrow: FC<ArrowProps> = ({ direction }) => {
-  return <div className={classNames("arrow", `arrow-${direction}`)}></div>;
+  return <div className={classNames("arrow", `arrow--${direction}`)}></div>;
 };
 
 export default Arrow;

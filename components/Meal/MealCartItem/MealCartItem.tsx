@@ -29,21 +29,21 @@ const MealCartItem: FC<MealCartItemProps> = ({ cartItem }) => {
   }, [dispatch, meal.id, quantity]);
 
   return (
-    <div className="mealcartitem">
+    <div className="mci">
       <Image
         width={60}
         height={60}
         src={meal.src}
         alt={meal.title}
-        className="mealcartitem-img"
+        className="mci__img"
       />
-      <div className="mealcartitem-body">
-        <div className="mealcartitem-body-header">{meal.title}</div>
+      <div className="mci__body">
+        <div className="mci__header">{meal.title}</div>
         <Counter
-          customClassName="mealcartitem-body-counter"
           value={quantity}
           onDecrement={decrement}
           onIncrement={increment}
+          size="small"
         />
       </div>
     </div>

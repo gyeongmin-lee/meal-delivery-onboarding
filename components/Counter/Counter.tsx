@@ -10,6 +10,7 @@ interface CounterProps {
   onIncrement?: () => void;
   onDecrement?: () => void;
   customClassName?: string;
+  size?: "small" | "regular";
 }
 
 const Counter: FC<CounterProps> = ({
@@ -17,17 +18,22 @@ const Counter: FC<CounterProps> = ({
   onIncrement,
   onDecrement,
   customClassName = "",
+  size = "regular",
 }) => {
   return (
-    <div className={classNames("counter", customClassName)}>
+    <div
+      className={classNames("counter", customClassName, {
+        "counter--small": size === "small",
+      })}
+    >
       {onDecrement && (
-        <button className="counter-btn" onClick={onDecrement}>
+        <button className="counter__btn" onClick={onDecrement}>
           -
         </button>
       )}
-      <div className="counter-value">{value}</div>
+      <div className="counter__value">{value}</div>
       {onIncrement && (
-        <button className="counter-btn" onClick={onIncrement}>
+        <button className="counter__btn" onClick={onIncrement}>
           +
         </button>
       )}

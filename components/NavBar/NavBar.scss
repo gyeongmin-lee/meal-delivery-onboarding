@@ -33,7 +33,7 @@
     }
   }
 
-  &-step {
+  &__step {
     display: grid;
     grid-template-columns: min-content 1fr min-content 1fr min-content 1fr;
     align-items: center;
@@ -43,20 +43,20 @@
     @include mobile {
       column-gap: 6px;
     }
+  }
 
-    &-text {
-      font-size: $font-size-regular;
-      font-weight: 600;
-      color: $text-color-greyscale;
-      text-decoration: none;
+  &__text {
+    font-size: $font-size-regular;
+    font-weight: 600;
+    color: $text-color-greyscale;
+    text-decoration: none;
 
-      &.active {
-        color: $primary-color;
-      }
+    &--active {
+      color: $primary-color;
     }
+  }
 
-    &-arrow {
-      width: 18px;
-    }
+  &__arrow {
+    width: 18px;
   }
 }

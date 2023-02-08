@@ -14,12 +14,12 @@ const MealGroup: FC<MealGroupProps> = ({ mealGroup }) => {
   return (
     <Element name={title}>
       <div className="mealgroup">
-        <div className="mealgroup-header">
-          <div className="mealgroup-header-title">{title}</div>
-          <div className="mealgroup-header-subtitle">{"this week's menu"}</div>
-          <div className="mealgroup-header-description">{description}</div>
+        <div className="mealgroup__header">
+          <div className="mealgroup__title">{title}</div>
+          <div className="mealgroup__subtitle">{"this week's menu"}</div>
+          <div className="mealgroup__description">{description}</div>
         </div>
-        <div className="mealgroup-meals">
+        <div className="mealgroup__meals">
           {items.map((meal) => (
             <Meal key={meal.id} meal={meal} />
           ))}

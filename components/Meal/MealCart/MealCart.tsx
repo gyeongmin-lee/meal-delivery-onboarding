@@ -31,8 +31,8 @@ const MealCart = ({ mealsPerWeek }: { mealsPerWeek: string }) => {
   const submitBtn = useMemo(
     () => (
       <button
-        className={classNames("mealcart-btn", {
-          "mealcart-btn--disabled": !isEnoughItemsInCart,
+        className={classNames("mealcart__btn", {
+          "mealcart__btn--disabled": !isEnoughItemsInCart,
         })}
       >
         {isEnoughItemsInCart
@@ -45,22 +45,22 @@ const MealCart = ({ mealsPerWeek }: { mealsPerWeek: string }) => {
 
   return (
     <div className="mealcart">
-      <div className="mealcart-header">
-        <h1 className="mealcart-header-title">Cart</h1>
-        <button className="mealcart-header-clear" onClick={clearMeal}>
+      <div className="mealcart__header">
+        <h1 className="mealcart__title">Cart</h1>
+        <button className="mealcart__clear" onClick={clearMeal}>
           Clear All
         </button>
       </div>
-      <div className="mealcart-items">
+      <div className="mealcart__items">
         {items.map((cartItem) => (
           <MealCartItem cartItem={cartItem} key={cartItem.id} />
         ))}
       </div>
-      <div className="mealcart-info">
-        <div className="mealcart-info-count">{itemCount} Items</div>
-        <div className="mealcart-info-subtotal">
+      <div className="mealcart__info">
+        <div className="mealcart__count">{itemCount} Items</div>
+        <div className="mealcart__subtotal">
           Subtotal:{" "}
-          <span className="mealcart-info-subtotal-value">${subTotal}</span>
+          <span className="mealcart__info-subtotal-value">${subTotal}</span>
         </div>
       </div>
       {isEnoughItemsInCart ? (

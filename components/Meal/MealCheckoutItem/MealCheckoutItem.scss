@@ -7,7 +7,7 @@ $image-dimension: 48px;
   grid-template-columns: min-content 1fr;
   background-color: $white;
 
-  &-img {
+  &__img {
     width: $image-dimension;
     height: $image-dimension;
     margin: 10px;
@@ -16,31 +16,29 @@ $image-dimension: 48px;
     border-radius: $border-radius-tiny;
   }
 
-  &-body {
+  &__body {
     display: grid;
     align-content: center;
     align-items: center;
     grid-template-columns: 1fr min-content;
     padding: 4px 12px 4px 6px;
     column-gap: 40px;
+  }
 
-    &-section {
-      &-title {
-        font-size: $font-size-small;
-        font-weight: 600;
-        color: $text-color;
-        margin-bottom: 4px;
-      }
+  &__title {
+    font-size: $font-size-small;
+    font-weight: 600;
+    color: $text-color;
+    margin-bottom: 4px;
+  }
 
-      &-subtitle {
-        font-size: $font-size-tiny;
-        color: $text-color-darkgrey;
-      }
-    }
+  &__subtitle {
+    font-size: $font-size-tiny;
+    color: $text-color-darkgrey;
+  }
 
-    &-quantity {
-      font-weight: bold;
-      font-size: $font-size-default;
-    }
+  &__quantity {
+    font-weight: bold;
+    font-size: $font-size-default;
   }
 }

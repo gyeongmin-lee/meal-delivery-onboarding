@@ -15,7 +15,7 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content min-content;
 
-  &-header {
+  &__header {
     background-color: $white;
     display: flex;
     align-items: center;
@@ -23,27 +23,27 @@
     border-top-left-radius: $border-radius-large;
     border-top-right-radius: $border-radius-large;
     padding: 16px 24px;
-
-    &-title {
-      font-weight: bold;
-      font-size: 1.2rem;
-      letter-spacing: $letter-space-default;
-    }
-
-    &-clear {
-      background: transparent;
-      border: 2px solid $text-color-grey;
-      border-radius: 30px;
-      color: $text-color-grey;
-      font-size: 0.6rem;
-      font-weight: bold;
-      letter-spacing: $letter-space-narrow;
-      padding: 3px 12px;
-      @include hover-small;
-    }
   }
 
-  &-items {
+  &__title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: $letter-space-default;
+  }
+
+  &__clear {
+    background: transparent;
+    border: 2px solid $text-color-grey;
+    border-radius: 30px;
+    color: $text-color-grey;
+    font-size: 0.6rem;
+    font-weight: bold;
+    letter-spacing: $letter-space-narrow;
+    padding: 3px 12px;
+    @include hover-small;
+  }
+
+  &__items {
     margin: 2px 0;
     overflow: auto;
     display: grid;
@@ -52,7 +52,7 @@
     row-gap: 2px;
   }
 
-  &-info {
+  &__info {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,20 +60,21 @@
     height: 48px;
     background-color: $white;
     padding: 0 16px;
-
-    &-count {
-      font-size: $font-size-tiny;
-    }
-
-    &-subtotal {
-      font-size: $font-size-small;
-      &-value {
-        font-weight: bold;
-      }
-    }
   }
 
-  &-btn {
+  &__count {
+    font-size: $font-size-tiny;
+  }
+
+  &__subtotal {
+    font-size: $font-size-small;
+  }
+
+  &__subtotal-value {
+    font-weight: bold;
+  }
+
+  &__btn {
     @include card-bottom-primary-button;
 
     &--disabled {

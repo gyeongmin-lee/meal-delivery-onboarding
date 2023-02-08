@@ -27,11 +27,11 @@ const Input: FC<InputProps> = ({
       onClick={() => ref.current?.focus()}
     >
       {(value || lockedValue) && (
-        <div className="finput-label">{placeholder}</div>
+        <div className="finput__label">{placeholder}</div>
       )}
       <input
         ref={ref}
-        className="finput-input"
+        className="finput__input"
         value={!!lockedValue ? lockedValue : value}
         onChange={(e) => !lockedValue && setValue(e.target.value)}
         placeholder={placeholder}

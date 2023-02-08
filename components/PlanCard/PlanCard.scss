@@ -25,19 +25,7 @@ $card-padding: 30px;
     }
   }
 
-  &-title {
-    font-size: 2.8rem;
-    font-weight: bold;
-  }
-
-  &-subtitle {
-    font-size: 1.6rem;
-    letter-spacing: $letter-space-default;
-    margin-bottom: 16px;
-    padding: 0 $card-padding;
-  }
-
-  &-info {
+  &__info {
     margin-bottom: 16px;
     display: grid;
     grid-template-columns: min-content min-content;
@@ -45,22 +33,22 @@ $card-padding: 30px;
     align-items: center;
     column-gap: 8px;
     padding: 0 $card-padding;
-
-    &-alert {
-      height: 8px;
-      width: 8px;
-      background-color: $primary-color;
-      border-radius: 4px;
-    }
-
-    &-text {
-      font-size: $font-size-tiny;
-      font-weight: 600;
-      letter-spacing: $letter-space-default;
-    }
   }
 
-  &-btn {
+  &__alert {
+    height: 8px;
+    width: 8px;
+    background-color: $primary-color;
+    border-radius: 4px;
+  }
+
+  &__text {
+    font-size: $font-size-tiny;
+    font-weight: 600;
+    letter-spacing: $letter-space-default;
+  }
+
+  &__btn {
     background-color: $primary-color;
     letter-spacing: $letter-space-default;
     padding: 12px 0;
@@ -70,35 +58,47 @@ $card-padding: 30px;
     font-weight: 600;
   }
 
-  &-badge {
-    &-container {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: -14px;
-      display: grid;
-      justify-content: center;
-    }
-
+  &__badge {
     background-color: $secondary-color-light;
     width: min-content;
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
     column-gap: 6px;
-    grid-template-columns: min-content max-content;
     padding: 7px 10px;
     border-radius: 32px;
+  }
 
-    &-img {
-      width: 14px;
-    }
+  &__badge-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -14px;
+    display: grid;
+    justify-content: center;
+  }
 
-    &-text {
-      font-size: $font-size-tiny;
-      font-weight: 500;
-      color: $secondary-color-dark;
-      letter-spacing: $letter-space-default;
-    }
+  &__badge-img {
+    width: 14px;
+  }
+
+  &__badge-text {
+    font-size: $font-size-tiny;
+    font-weight: 500;
+    color: $secondary-color-dark;
+    letter-spacing: $letter-space-default;
+  }
+
+  &__title {
+    font-size: 2.8rem;
+    font-weight: bold;
+  }
+
+  &__subtitle {
+    font-size: 1.6rem;
+    letter-spacing: $letter-space-default;
+    margin-bottom: 16px;
+    padding: 0 $card-padding;
   }
 }

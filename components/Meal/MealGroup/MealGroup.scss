@@ -1,36 +1,36 @@
 @import "styles/_styles.scss";
 
 .mealgroup {
-  &-header {
+  &__header {
     padding: 0 100px;
     @include mobile {
       padding: 0 32px;
     }
     letter-spacing: $letter-space-default;
-
-    &-title {
-      font-size: 1.6rem;
-      font-weight: bold;
-
-      margin-bottom: 8px;
-    }
-
-    &-subtitle {
-      font-size: $font-size-tiny;
-      font-style: italic;
-      color: $text-color-darkgrey;
-      margin-bottom: 16px;
-    }
-
-    &-description {
-      font-size: $font-size-small;
-      color: $text-color-darkgrey;
-      line-height: $font-size-small * 1.25;
-      margin-bottom: 40px;
-    }
   }
 
-  &-meals {
+  &__title {
+    font-size: 1.6rem;
+    font-weight: bold;
+
+    margin-bottom: 8px;
+  }
+
+  &__subtitle {
+    font-size: $font-size-tiny;
+    font-style: italic;
+    color: $text-color-darkgrey;
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    font-size: $font-size-small;
+    color: $text-color-darkgrey;
+    line-height: $font-size-small * 1.25;
+    margin-bottom: 40px;
+  }
+
+  &__meals {
     display: grid;
     @include fullhd {
       grid-template-columns: 1fr 1fr 1fr;

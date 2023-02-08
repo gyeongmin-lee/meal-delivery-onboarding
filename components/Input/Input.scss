@@ -20,14 +20,14 @@
     background-color: lighten($text-color-greyscale, 35%);
   }
 
-  &-label {
+  &__label {
     font-size: $font-size-tiny;
     font-weight: 500;
     color: $text-color-greyscale;
     padding-top: 6px;
   }
 
-  &-input {
+  &__input {
     background-color: transparent;
     border: none;
     outline: none;

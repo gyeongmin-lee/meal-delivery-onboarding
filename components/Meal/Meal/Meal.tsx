@@ -52,49 +52,41 @@ const Meal: FC<MealProps> = ({ meal }) => {
         height={200}
         src={meal.src}
         alt={meal.title}
-        className="meal-img"
+        className="meal__img"
       />
-      <div className="meal-body">
-        <div className="meal-title">{meal.title}</div>
-        <div className="meal-nutrients">
-          <div className="meal-nutrients-group">
-            <div className="meal-nutrients-group-title">Cal</div>
-            <div className="meal-nutrients-group-content">
-              {meal.nutrient.calories}
-            </div>
+      <div className="meal__body">
+        <div className="meal__title">{meal.title}</div>
+        <div className="meal__nutrients">
+          <div className="meal__nutrients-group">
+            <div className="meal__nutrients-title">Cal</div>
+            <div>{meal.nutrient.calories}</div>
           </div>
-          <div className="meal-nutrients-group">
-            <div className="meal-nutrients-group-title">Protein</div>
-            <div className="meal-nutrients-group-content">
-              {meal.nutrient.protein}
-            </div>
+          <div className="meal__nutrients-group">
+            <div className="meal__nutrients-title">Protein</div>
+            <div>{meal.nutrient.protein}</div>
           </div>
-          <div className="meal-nutrients-group">
-            <div className="meal-nutrients-group-title">Carbs</div>
-            <div className="meal-nutrients-group-content">
-              {meal.nutrient.carbs}
-            </div>
+          <div className="meal__nutrients-group">
+            <div className="meal__nutrients-title">Carbs</div>
+            <div>{meal.nutrient.carbs}</div>
           </div>
-          <div className="meal-nutrients-group">
-            <div className="meal-nutrients-group-title">Fats</div>
-            <div className="meal-nutrients-group-content">
-              {meal.nutrient.fats}
-            </div>
+          <div className="meal__nutrients-group">
+            <div className="meal__nutrients-title">Fats</div>
+            <div>{meal.nutrient.fats}</div>
           </div>
         </div>
-        <div className="meal-footer">
+        <div className="meal__footer">
           {isInCart && (
             <Counter
               value={counterValue}
               onDecrement={decrement}
-              customClassName="meal-footer-counter"
+              customClassName="meal__counter"
             />
           )}
           <button
-            className="meal-footer-btn"
+            className="meal__btn"
             onClick={isInCart ? increment : addMeal}
           >
-            <span className="meal-footer-btn-icon">+</span>{" "}
+            <span className="meal__icon">+</span>{" "}
             {isInCart ? "Add Another" : "Add to Cart"}
           </button>
         </div>

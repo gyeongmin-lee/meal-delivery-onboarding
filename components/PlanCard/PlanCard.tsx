@@ -19,26 +19,26 @@ const PlanCard: FC<PlanCardProps> = ({
   return (
     <Link className="plancard" href={href}>
       {hasBadge && (
-        <div className="plancard-badge-container">
-          <div className="plancard-badge">
+        <div className="plancard__badge-container">
+          <div className="plancard__badge">
             <Image
-              className="plancard-badge-img"
+              className="plancard__badge-img"
               src="/icons/thumbsup.svg"
               alt="thumbs up"
               width={20}
               height={20}
             />
-            <p className="plancard-badge-text">MOST POPULAR</p>
+            <p className="plancard__badge-text">MOST POPULAR</p>
           </div>
         </div>
       )}
-      <div className="plancard-title">{mealCount}</div>
-      <div className="plancard-subtitle">MEALS PER WEEK</div>
-      <div className="plancard-info">
-        <span className="plancard-info-alert"></span>
-        <span className="plancard-info-text">${mealPrice}/meal</span>
+      <div className="plancard__title">{mealCount}</div>
+      <div className="plancard__subtitle">MEALS PER WEEK</div>
+      <div className="plancard__info">
+        <span className="plancard__alert"></span>
+        <span className="plancard__text">${mealPrice}/meal</span>
       </div>
-      <button className="plancard-btn">Select</button>
+      <button className="plancard__btn">Select</button>
     </Link>
   );
 };
