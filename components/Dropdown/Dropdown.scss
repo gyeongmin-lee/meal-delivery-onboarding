@@ -1,0 +1,55 @@
+@import "styles/_styles.scss";
+
+.dropdown {
+  background-color: $bg-white-light;
+  padding: 14px 20px;
+  letter-spacing: $letter-space-default;
+  font-size: $font-size-small;
+  border-radius: $border-radius-small;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &.is-open {
+    border: 2px solid $text-color;
+    padding: 12px 18px;
+  }
+
+  &-menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: $bg-white-light;
+    display: grid;
+    grid-template-columns: max-content;
+    padding: 20px;
+    row-gap: 20px;
+    border-radius: $border-radius-small;
+    color: $text-color-greyscale;
+
+    .Dropdown-option:hover {
+      color: $text-color;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid $bg-white-light;
+      margin-top: -8px;
+      right: 12px;
+    }
+  }
+
+  &-control {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    column-gap: 12px;
+  }
+
+  .Dropdown-arrow-wrapper {
+    display: flex;
+    align-items: center;
+  }
+}

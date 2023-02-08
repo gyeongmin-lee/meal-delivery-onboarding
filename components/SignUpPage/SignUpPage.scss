@@ -1,0 +1,7 @@
+@import "styles/_styles.scss";
+
+.signup {
+  display: grid;
+  height: 100%;
+  grid-template-rows: min-content 1fr;
+}
