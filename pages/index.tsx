@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../redux";
-import { setEmail, setZip } from "../redux/OrderSlice";
+import { RootState } from "../lib/redux";
+import { setEmail, setZip } from "../lib/redux/OrderSlice";
 import "./index.scss";
 
 export default function LandingPage() {

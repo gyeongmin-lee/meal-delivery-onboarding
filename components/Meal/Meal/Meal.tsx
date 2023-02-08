@@ -1,13 +1,13 @@
 import { FC, useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Meal as MealObj } from "../../../lib/MealsApi";
-import { RootState } from "../../../redux";
+import { RootState } from "../../../lib/redux";
 import {
   addMealToCart,
   decrementMeal,
   incrementMeal,
   removeMealFromCart,
-} from "../../../redux/CartSlice";
+} from "../../../lib/redux/CartSlice";
 import Counter from "../../Counter/Counter";
 import "./Meal.scss";
 
@@ -15,7 +15,7 @@ interface MealProps {
   meal: MealObj;
 }
 
-export const Meal: FC<MealProps> = ({ meal }) => {
+const Meal: FC<MealProps> = ({ meal }) => {
   const cart = useSelector((root: RootState) => root.cart);
   const dispatch = useDispatch();
 
@@ -95,3 +95,5 @@ export const Meal: FC<MealProps> = ({ meal }) => {
     </div>
   );
 };
+
+export default Meal;

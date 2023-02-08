@@ -4,11 +4,14 @@ import { ReactElement, useCallback, useMemo, useState } from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-scroll";
 import Dropdown from "../../../components/Dropdown/Dropdown";
-import { MealCart } from "../../../components/MealPage/MealCart/MealCart";
-import { MealGroup as MealGroupComponent } from "../../../components/MealPage/MealGroup/MealGroup";
+import MealCart from "../../../components/Meal/MealCart/MealCart";
+import MealGroupComponent from "../../../components/Meal/MealGroup/MealGroup";
 import NavBar from "../../../components/NavBar/NavBar";
 import { getMealsService, Meal, MealGroup } from "../../../lib/MealsApi";
-import { addMealsToCart, clearMealFromCart } from "../../../redux/CartSlice";
+import {
+  addMealsToCart,
+  clearMealFromCart,
+} from "../../../lib/redux/CartSlice";
 import { filterMethods, FILTER_OPTIONS } from "../../../util/FilterUtils";
 import { shuffle } from "../../../util/general";
 import "./index.scss";

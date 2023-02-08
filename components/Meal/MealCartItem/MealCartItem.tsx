@@ -5,7 +5,7 @@ import {
   decrementMeal,
   incrementMeal,
   removeMealFromCart,
-} from "../../../redux/CartSlice";
+} from "../../../lib/redux/CartSlice";
 import Counter from "../../Counter/Counter";
 import "./MealCartItem.scss";
 
@@ -13,7 +13,7 @@ interface MealCartItemProps {
   cartItem: CartItem;
 }
 
-export const MealCartItem: FC<MealCartItemProps> = ({ cartItem }) => {
+const MealCartItem: FC<MealCartItemProps> = ({ cartItem }) => {
   const { id, meal, quantity } = cartItem;
   const dispatch = useDispatch();
 
@@ -42,3 +42,5 @@ export const MealCartItem: FC<MealCartItemProps> = ({ cartItem }) => {
     </div>
   );
 };
+
+export default MealCartItem;

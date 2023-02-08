@@ -12,7 +12,7 @@ const initialState: OrderState = {
 
 const order = createSlice({
   name: "order",
-  initialState,
+  initialState: initialState,
   reducers: {
     setEmail(state, { payload }: PayloadAction<string>) {
       state.email = payload;

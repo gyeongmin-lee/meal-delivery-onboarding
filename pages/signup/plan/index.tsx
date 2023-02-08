@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 import NavBar from "../../../components/NavBar/NavBar";
-import { PlanCard } from "../../../components/PlanPage/PlanCard/PlanCard";
+import PlanCard from "../../../components/PlanCard/PlanCard";
 import { NextPageWithLayout } from "../../_app";
 import "./index.scss";
 

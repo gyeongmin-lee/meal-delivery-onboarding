@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import React, { FC, InputHTMLAttributes, useRef, useState } from "react";
+import { FC, InputHTMLAttributes, useRef, useState } from "react";
 import "./Input.scss";
 
 type CustomInputProps = Omit<InputHTMLAttributes<HTMLInputElement>, "type">;
@@ -8,7 +8,7 @@ interface InputProps extends CustomInputProps {
   isPassword?: boolean;
 }
 
-export const Input: FC<InputProps> = ({
+const Input: FC<InputProps> = ({
   lockedValue,
   placeholder,
   isPassword = false,
@@ -44,3 +44,5 @@ export const Input: FC<InputProps> = ({
     </div>
   );
 };
+
+export default Input;

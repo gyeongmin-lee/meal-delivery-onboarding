@@ -1,15 +1,17 @@
+import { ReactElement } from "react";
 import { useSelector } from "react-redux";
-import { RootState } from "../../src/redux";
+import Input from "../../../components/Input/Input";
+import MealCheckoutItem from "../../../components/Meal/MealCheckoutItem/MealCheckoutItem";
+import NavBar from "../../../components/NavBar/NavBar";
+import { RootState } from "../../../lib/redux";
 import {
   selectAddOnPrice,
   selectPlanPrice,
   selectSubtotal,
-} from "../../src/redux/CartSlice";
-import { Input } from "../common/Input/Input";
-import "./CheckoutPage.scss";
-import { MealCheckoutItem } from "./MealCheckoutItem/MealCheckoutItem";
+} from "../../../lib/redux/CartSlice";
+import "./index.scss";
 
-export const CheckoutPage = () => {
+const Page = () => {
   const { zip, email } = useSelector((state: RootState) => state.order);
   const { items, mpw } = useSelector((state: RootState) => state.cart);
   const planPrice = useSelector(selectPlanPrice);
@@ -100,7 +102,7 @@ export const CheckoutPage = () => {
             <div className="checkout-summary-bill-divider"></div>
             <div className="checkout-summary-bill-info">
               <div className="checkout-summary-bill-info-label checkout-summary-bill-info-label--primary">
-                Today's Total
+                {"Today's Total"}
               </div>
               <div className="checkout-summary-bill-info-value checkout-summary-bill-info-value--primary">
                 ${subTotal}
@@ -113,3 +115,14 @@ export const CheckoutPage = () => {
     </div>
   );
 };
+
+Page.getLayout = function getLayout(page: ReactElement) {
+  return (
+    <div className="signup">
+      <NavBar />
+      {page}
+    </div>
+  );
+};
+
+export default Page;

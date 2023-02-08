@@ -1,6 +1,6 @@
 import { createSelector, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { RootState } from ".";
-import { Meal } from "../lib/MealsApi";
+import { Meal } from "../MealsApi";
 
 interface PlanPrice {
   [key: string]: number;

@@ -1,12 +1,12 @@
 import { FC } from "react";
-import { CartItem } from "../../../redux/CartSlice";
+import { CartItem } from "../../../lib/redux/CartSlice";
 import "./MealCheckoutItem.scss";
 
 interface MealCheckoutItemProps {
   cartItem: CartItem;
 }
 
-export const MealCheckoutItem: FC<MealCheckoutItemProps> = ({ cartItem }) => {
+const MealCheckoutItem: FC<MealCheckoutItemProps> = ({ cartItem }) => {
   const { meal, quantity } = cartItem;
   return (
     <div className="mlckitem">
@@ -21,3 +21,5 @@ export const MealCheckoutItem: FC<MealCheckoutItemProps> = ({ cartItem }) => {
     </div>
   );
 };
+
+export default MealCheckoutItem;

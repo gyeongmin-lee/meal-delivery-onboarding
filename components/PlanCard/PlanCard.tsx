@@ -9,7 +9,7 @@ interface PlanCardProps {
   href?: string;
 }
 
-export const PlanCard: FC<PlanCardProps> = ({
+const PlanCard: FC<PlanCardProps> = ({
   mealCount,
   mealPrice,
   hasBadge = false,
@@ -39,3 +39,5 @@ export const PlanCard: FC<PlanCardProps> = ({
     </Link>
   );
 };
+
+export default PlanCard;

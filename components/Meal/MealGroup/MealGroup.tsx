@@ -1,14 +1,14 @@
 import { FC } from "react";
 import { Element } from "react-scroll";
 import { MealGroup as MealGroupInterface } from "../../../lib/MealsApi";
-import { Meal } from "../Meal/Meal";
+import Meal from "../Meal/Meal";
 import "./MealGroup.scss";
 
 interface MealGroupProps {
   mealGroup: MealGroupInterface;
 }
 
-export const MealGroup: FC<MealGroupProps> = ({ mealGroup }) => {
+const MealGroup: FC<MealGroupProps> = ({ mealGroup }) => {
   const { title, description, items } = mealGroup;
 
   return (
@@ -28,3 +28,5 @@ export const MealGroup: FC<MealGroupProps> = ({ mealGroup }) => {
     </Element>
   );
 };
+
+export default MealGroup;

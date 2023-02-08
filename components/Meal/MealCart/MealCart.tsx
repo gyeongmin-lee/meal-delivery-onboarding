@@ -2,17 +2,17 @@ import classNames from "classnames";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../../../redux";
+import { RootState } from "../../../lib/redux";
 import {
   clearMealFromCart,
   initializeCart,
   selectItemCount,
   selectSubtotal,
-} from "../../../redux/CartSlice";
-import { MealCartItem } from "../MealCartItem/MealCartItem";
+} from "../../../lib/redux/CartSlice";
+import MealCartItem from "../MealCartItem/MealCartItem";
 import "./MealCart.scss";
 
-export const MealCart = ({ mealsPerWeek }: { mealsPerWeek: string }) => {
+const MealCart = ({ mealsPerWeek }: { mealsPerWeek: string }) => {
   const dispatch = useDispatch();
 
   const { items, mpw } = useSelector((root: RootState) => root.cart);
@@ -73,3 +73,5 @@ export const MealCart = ({ mealsPerWeek }: { mealsPerWeek: string }) => {
     </div>
   );
 };
+
+export default MealCart;

@@ -4,7 +4,7 @@ import { AppProps } from "next/app";
 import Head from "next/head";
 import { ReactElement, ReactNode } from "react";
 import { Provider } from "react-redux";
-import { store } from "../redux";
+import { store } from "../lib/redux";
 import "../styles/index.scss";
 
 // If loading a variable font, you don't need to specify the font weight

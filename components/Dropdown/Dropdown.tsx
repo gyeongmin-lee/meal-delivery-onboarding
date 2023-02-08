@@ -1,6 +1,6 @@
 import { FC } from "react";
 import DropDown, { ReactDropdownProps } from "react-dropdown";
-import { Arrow } from "../Arrow/Arrow";
+import Arrow from "../Arrow/Arrow";
 import "./Dropdown.scss";
 
 const Dropdown: FC<ReactDropdownProps> = (props) => {
