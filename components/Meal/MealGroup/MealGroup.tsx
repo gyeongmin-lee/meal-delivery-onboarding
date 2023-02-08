@@ -16,7 +16,7 @@ const MealGroup: FC<MealGroupProps> = ({ mealGroup }) => {
       <div className="mealgroup">
         <div className="mealgroup-header">
           <div className="mealgroup-header-title">{title}</div>
-          <div className="mealgroup-header-subtitle">this week's menu</div>
+          <div className="mealgroup-header-subtitle">{"this week's menu"}</div>
           <div className="mealgroup-header-description">{description}</div>
         </div>
         <div className="mealgroup-meals">

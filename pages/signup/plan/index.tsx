@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ReactElement } from "react";
 import NavBar from "../../../components/NavBar/NavBar";
 import PlanCard from "../../../components/PlanCard/PlanCard";
@@ -14,10 +15,12 @@ const Page: NextPageWithLayout = () => {
             <div className="plan-info-box-item-text">
               Our meals each contains a single serving
             </div>
-            <img
+            <Image
               className="plan-info-box-item-img"
               src="/images/meal-02.png"
               alt="meal"
+              width={210}
+              height={168}
             />
           </div>
           <div className="plan-info-box-divider"></div>
@@ -25,10 +28,12 @@ const Page: NextPageWithLayout = () => {
             <div className="plan-info-box-item-text">
               Our Fresh+ add-on menu has multi-serve options.
             </div>
-            <img
+            <Image
               className="plan-info-box-item-img"
               src="/images/meal-01.png"
               alt="meal"
+              width={210}
+              height={168}
             />
           </div>
         </div>

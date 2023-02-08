@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FC } from "react";
 import { CartItem } from "../../../lib/redux/CartSlice";
 import "./MealCheckoutItem.scss";
@@ -10,7 +11,13 @@ const MealCheckoutItem: FC<MealCheckoutItemProps> = ({ cartItem }) => {
   const { meal, quantity } = cartItem;
   return (
     <div className="mlckitem">
-      <img src={meal.src} alt={meal.title} className="mlckitem-img" />
+      <Image
+        width={60}
+        height={60}
+        src={meal.src}
+        alt={meal.title}
+        className="mlckitem-img"
+      />
       <div className="mlckitem-body">
         <div className="mlckitem-body-section">
           <h1 className="mlckitem-body-section-title">{meal.title}</h1>

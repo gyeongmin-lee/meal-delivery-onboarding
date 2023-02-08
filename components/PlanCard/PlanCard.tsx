@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 import "./PlanCard.scss";
@@ -20,10 +21,12 @@ const PlanCard: FC<PlanCardProps> = ({
       {hasBadge && (
         <div className="plancard-badge-container">
           <div className="plancard-badge">
-            <img
+            <Image
               className="plancard-badge-img"
               src="/icons/thumbsup.svg"
               alt="thumbs up"
+              width={20}
+              height={20}
             />
             <p className="plancard-badge-text">MOST POPULAR</p>
           </div>

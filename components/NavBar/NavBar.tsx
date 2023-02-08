@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import "./NavBar.scss";
@@ -9,7 +10,13 @@ const NavBar = () => {
     <div className="nav">
       <div className="nav-content">
         <Link className="nav-logo" href="/">
-          <img src="/images/logo.png" alt="Logo" className="nav-content-img" />
+          <Image
+            src="/images/logo.png"
+            alt="Logo"
+            className="nav-content-img"
+            width={125}
+            height={30}
+          />
         </Link>
         <div className="nav-content-step">
           <Link
@@ -22,10 +29,12 @@ const NavBar = () => {
           >
             Plans
           </Link>
-          <img
+          <Image
             src="/icons/forward.svg"
             alt=""
             className="nav-content-step-arrow"
+            width={20}
+            height={20}
           />
           <Link
             href="/signup/meal?choose=10"
@@ -37,10 +46,12 @@ const NavBar = () => {
           >
             Meals
           </Link>
-          <img
+          <Image
             src="/icons/forward.svg"
             alt=""
             className="nav-content-step-arrow"
+            width={20}
+            height={20}
           />
           <Link
             href="/signup/checkout"

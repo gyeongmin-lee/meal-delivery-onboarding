@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FC, useCallback } from "react";
 import { useDispatch } from "react-redux";
 import {
@@ -29,7 +30,13 @@ const MealCartItem: FC<MealCartItemProps> = ({ cartItem }) => {
 
   return (
     <div className="mealcartitem">
-      <img src={meal.src} alt={meal.title} className="mealcartitem-img" />
+      <Image
+        width={60}
+        height={60}
+        src={meal.src}
+        alt={meal.title}
+        className="mealcartitem-img"
+      />
       <div className="mealcartitem-body">
         <div className="mealcartitem-body-header">{meal.title}</div>
         <Counter

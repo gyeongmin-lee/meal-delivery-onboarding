@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FC, useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Meal as MealObj } from "../../../lib/MealsApi";
@@ -46,7 +47,13 @@ const Meal: FC<MealProps> = ({ meal }) => {
 
   return (
     <div className="meal">
-      <img src={meal.src} alt={meal.title} className="meal-img" />
+      <Image
+        width={200}
+        height={200}
+        src={meal.src}
+        alt={meal.title}
+        className="meal-img"
+      />
       <div className="meal-body">
         <div className="meal-title">{meal.title}</div>
         <div className="meal-nutrients">
