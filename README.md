@@ -1,8 +1,8 @@
 # Meal Delivery Onboarding
 
-https://main.d10rroua7pnjjo.amplifyapp.com/
+[Demo Link](https://meal-delivery-onboarding.vercel.app/)
 
-Demo of a meal delivery onboarding process, built with React.
+Mock meal delivery onboarding process, built with React and Next.js.
 
 ## Development
 

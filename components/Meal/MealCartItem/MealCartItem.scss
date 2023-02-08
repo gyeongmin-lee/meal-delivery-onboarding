@@ -18,7 +18,7 @@ $image-dimension: 56px;
 
   &__body {
     display: grid;
-    padding: 0px 6px;
+    padding: 0px 12px 0px 6px;
     align-content: center;
     grid-template-rows: min-content min-content;
     row-gap: 12px;
@@ -27,6 +27,7 @@ $image-dimension: 56px;
   &__header {
     font-weight: 600;
     font-size: $font-size-small;
+    line-height: $font-size-small * 1.25;
     letter-spacing: $letter-space-default;
 
     white-space: nowrap;
